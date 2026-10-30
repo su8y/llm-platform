@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  config_node:
+    extends:
+      file: secret.yaml
+      service: monitoring
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+      - GF_SERVER_ROOT_URL=http://localhost:4331/monitoring/
+      - GF_SERVER_SERVE_FROM_SUB_PATH=true
+      - GF_INSTALL_PLUGINS=redis-datasource

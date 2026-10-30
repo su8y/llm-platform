@@ -1,0 +1,215 @@
+.knit-side {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999999999;
+  height: 100dvh;
+
+  .side-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $grey-800;
+    width: 212px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px 16px 32px;
+    text-align: center;
+
+    .side-wrapper {
+      // 로고(앱 이름)가 있을 때만 렌더링. 상단 헤더 타이틀(높이 64px)과 같은 선에 놓는다
+      .knit-logo {
+        display: flex;
+        align-items: center;
+        height: 56px;
+        padding: 0 12px;
+        text-decoration: none;
+
+        .app-logo {
+          color: $whiteColor;
+          font-size: 18px;
+        }
+      }
+
+      .side-items {
+        margin-top: 0;
+        list-style: none;
+        padding: 0;
+        transition: all 0.3s;
+
+        .side-item {
+          margin: 8px 0;
+          text-align: center;
+          transition: all .3s;
+
+          &.history, &.playground, &.reference {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            span {
+              display: flex;
+              gap: 8px;
+              align-items: center;
+              color: $whiteColor;
+              cursor: pointer;
+              font-size: $font-16;
+              font-weight: 700;
+
+              &.depth1 {
+                pointer-events: none;
+                padding: 10px 12px;
+
+                &.penpal {
+                  padding-right: 0;
+                }
+
+                > span {
+                  font-size: $font-16;
+                }
+                > i {
+                  font-size: $font-20;
+                }
+              }
+            }
+
+            .depth2 {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 4px;
+              margin-top: 0;
+              margin-bottom: 8px;
+              padding-left: 14px;
+
+              > a {
+                width: 100%;
+                padding: 8px;
+                transition: all .3s;
+                &:hover {
+                  border-radius: 5px;
+                  background: $grey-600;
+                }
+
+                &.isActive {
+                  width: 100%;
+                  border-bottom: none;
+                  border-radius: 5px;
+                  background-color: #ec0047;
+                }
+
+                i {
+                  font-size: 16px;
+
+                  &.font-icon-plan {
+                    font-size: 12px;
+                  }
+                }
+
+                span {
+                  font-size: 13px;
+                }
+              }
+              &:hover {
+                background-color: transparent;
+              }
+            }
+
+            &:hover {
+              background-color: transparent;
+            }
+
+            &.isActive {
+              background: none;
+              pointer-events: initial;
+              .depth1 {
+                width: 100%;
+                border-bottom: none;
+                border-radius: 5px;
+                background-color: #ec0047;
+              }
+            }
+
+            &.historyActive {
+              .depth1 {
+                span, i {
+                  color: #ec0047;
+                }
+              }
+            }
+          }
+
+          &.playground {
+            margin-top: -8px;
+          }
+
+          a, button {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px;
+            font-size: 20px;
+            font-weight: 700;
+            color: $whiteColor;
+            span {
+              cursor: pointer;
+              font-size: 16px;
+              font-weight: 700;
+            }
+          }
+
+          button {
+            width: 100%;
+          }
+
+          &:last-child {
+            border-bottom: none;
+          }
+
+          &:hover {
+            border-radius: 5px;
+            background: $grey-600;
+          }
+
+          &.isActive {
+            border-radius: 5px;
+            background-color: #ec0047;
+            pointer-events: none;
+          }
+
+          &.noBorder {
+            border-bottom: none;
+          }
+
+          &.disabled {
+            opacity: 0.5;
+            pointer-events: none;
+          }
+        }
+
+        .line {
+          background-color: $grey-600;
+        }
+      }
+    }
+
+    .side-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 14px;
+      text-align: left;
+
+      .footer-text {
+        color: $grey-300;
+        font-family: "Pretendard Variable";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 120%; /* 14.4px */
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+  }
+}

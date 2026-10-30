@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  config_node:
+    extends:
+      file: secret.yaml
+      service: mcp
+    environment:
+      # MCP arg
+      - ENVIRONMENT=production
+      - MCP_TRANSPORT=http
+      - MCP_HOST=0.0.0.0
+      - MCP_PORT=8002
+
+      # Database Configuration
+      - MYSQL_HOST=database
+      - MYSQL_USER=root
+      - MYSQL_DATABASE=llm_platform
+      - MYSQL_PORT=3306
+
+      # Clickhouse Configuration
+      - CLICKHOUSE_HOST=clickhouse
+      - CLICKHOUSE_PORT=9000
+      - CLICKHOUSE_USER=admin
+      
+      # External API Keys (these should be set in actual environment)
+      - PINECONE_INDEX_NAME=knowledge-base
+      
+      # LLM Proxy Service
+      - LLM_PROXY_URL=http://llm-proxy:9999
+      
+      # Server Configuration
+      - SERVER_STAGE=DOCKER

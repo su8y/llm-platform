@@ -1,0 +1,10 @@
+.idea
+.venv*
+.previous
+__pycache__/
+data
+.env
+*.ipynb
+*.log
+test.py
+lang_detect_model.bin

@@ -1,0 +1,21 @@
+FROM grafana/grafana:10.2.2
+
+LABEL description="Custom Grafana for LLM Platform monitoring"
+
+USER root
+
+RUN apk add --no-cache curl
+
+RUN grafana-cli plugins install redis-datasource && \
+    grafana-cli plugins install grafana-clock-panel && \
+    grafana-cli plugins install grafana-piechart-panel
+
+# Provisioning 파일 복사 (소유권 설정 포함)
+COPY --chown=472:472 provisioning/ /etc/grafana/provisioning/
+
+# 대시보드 복사 (선택, 소유권 설정 포함)
+COPY --chown=472:472 dashboards/ /var/lib/grafana/dashboards/
+
+USER grafana
+
+EXPOSE 3000

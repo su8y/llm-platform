@@ -1,0 +1,155 @@
+/* color */
+$common-red: #e60000;
+
+$statusGreen: #69ab15;
+$statusYellow: #f9e000;
+$statusViolet: #9848FF;
+
+$deepblue-300: #5e9fff;
+$deepblue-400: #2e82ff;
+$deepblue-500: #0066ff;
+$deepblue-600: #0057d9;
+$deepblue-700: #0048b5;
+$deepblue-900: #002e73;
+
+$deepyellow-500: #f7a300;
+
+$grey-0: #ffffff;
+$grey-50: #f0f0f0;
+$grey-100: #d9d9d9;
+$grey-200: #bfbfbf;
+$grey-300: #8c8c8c;
+$grey-400: #595959;
+$grey-500: #454545;
+$grey-600: #262626;
+$grey-700: #1f1f1f;
+$grey-800: #141414;
+$grey-900: #000000;
+
+/* number */
+$number-2: 2px;
+$number-4: 4px;
+$number-8: 8px;
+$number-12: 12px;
+$number-16: 16px;
+$number-20: 20px;
+$number-24: 24px;
+$number-28: 28px;
+$number-32: 32px;
+$number-36: 36px;
+$number-40: 40px;
+$number-44: 44px;
+$number-48: 48px;
+$number-52: 52px;
+
+$whiteColor: $grey-0;
+$mainColor: #ec0047;
+$mainColor2: #1F79C0;
+$subColor: #43A4F0;
+$subColor2: #6DBFFF;
+$textColor: #3D3D3D;
+$headerColor: #222;
+$backgroundColor: $grey-50;
+$hoverColor: #0A60A4;
+$lineColor: #C9E7FF;
+$searchTitleColor: #046684;
+$labelColor: #767676;
+$tableColor: #E1F2FF;
+$placeholderColor: $grey-200;
+
+// border radius
+$radius-2: $number-2;
+$radius-4: $number-4;
+$radius-8: $number-8;
+$radius-12: $number-12;
+$radius-16: $number-16;
+$radius-20: $number-20;
+$radius-24: $number-24;
+$radius-28: $number-28;
+$radius-32: $number-32;
+$radius-36: $number-36;
+$radius-40: $number-40;
+$radius-44: $number-44;
+$radius-48: $number-48;
+$radius-52: $number-52;
+
+// border color
+$line-white: $grey-0;
+$line-sm: $grey-100;
+$line-md: $grey-200;
+$line-lg: $grey-300;
+$line-xl: $grey-400;
+
+// primary
+$primary-sm: $deepblue-300;
+$primary-md: $deepblue-400;
+$primary-lg: $deepblue-600;
+$primary-xxl: $deepblue-900;
+
+// box shadow
+$shadow-panel-sm: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+$shadow-button-sm: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+$shadow-popup-lg: 0px 24px 24px -8px rgba(0, 0, 0, 0.20);
+$shadow-popup-mdx2: 0px 8px 15px 0px rgba(0, 0, 0, 0.16), 0px 0px 0px 1px rgba(0, 0, 0, 0.16);
+
+// font size
+$font-80: 80px;
+$font-50: 50px;
+$font-40: 40px;
+$font-36: 36px;
+$font-32: 32px;
+$font-30: 30px;
+$font-24: 24px;
+$font-22: 22px;
+$font-20: 20px;
+$font-18: 18px;
+$font-16: 16px;
+$font-15: 15px;
+$font-14: 14px;
+$font-13: 13px;
+
+// font weight
+$regular: 400;
+$medium: 500;
+$semiBold: 600;
+$bold: 700;
+$bolder: 800;
+
+// hover color
+$hover-grey-bg: $grey-50;
+$hover-deepgrey-bg: $grey-200;
+$hover-blue-bg: $primary-lg;
+
+
+$n-gray-990:#111;
+$n-gray-950:#222;
+$n-gray-900:#2F2F2F;
+$n-gray-850:#333;
+$n-gray-800:#444;
+$n-gray-750:#555;
+$n-gray-700:#666;
+$n-gray-650:#777;
+$n-gray-600:#888;
+$n-gray-550:#999;
+$n-gray-500:#aaa;
+$n-gray-450:#B1B1B1;
+$n-gray-400:#BBB;
+$n-gray-350:#C7C7C7;
+$n-gray-300:#CCC;
+$n-gray-250:#D7D7D7;
+$n-gray-200:#E0E0E0;
+$n-gray-150:#E6E6E6;
+$n-gray-100:#EBEBEB;
+$n-gray-50:#F4F4F4;
+
+
+@mixin grid($col, $row-gap, $col-gap: null) {
+  display: grid;
+  grid-template-columns: repeat(#{$col}, 1fr);
+
+  @if $col-gap == null {
+    gap: #{$row-gap};
+  } @else {
+    gap: #{$row-gap} #{$col-gap};
+  }
+}

@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  config_node:
+    extends:
+      file: secret.yaml
+      service: clickhouse
+    environment:
+      - CLICKHOUSE_USER=admin
+      - CLICKHOUSE_DB=default
+      - CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT=1

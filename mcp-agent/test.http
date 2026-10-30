@@ -1,0 +1,97 @@
+
+POST http://127.0.0.1:8001/chat
+Content-Type: application/json
+
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "지금 몇시야?"
+    }
+  ],
+  "model": "claude-4-sonnet"
+}
+
+###
+POST http://127.0.0.1:8001/chat
+Content-Type: application/json
+
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "가장 마지막 문의글 하나 뽑아봐"
+    }
+  ],
+  "model": "gpt-5"
+}
+
+###
+
+POST http://localhost:8002/auth/validate
+Authorization: Bearer {{TOKEN}}
+
+###
+
+GET http://localhost:8002/mcp
+Accept: text/event-stream
+Authorization: Bearer {{TOKEN}}
+
+###
+
+GET {{MCP_SERVER_URL}}
+Accept: text/event-stream
+Authorization: Bearer {{TOKEN}}
+
+###
+GET https://threads.net/oauth/authorize
+  ?client_id={{CLIENT_ID}}
+  &redirect_uri={{REDIRECT_URI}}
+  &scope=threads_basic,threads_content_publish
+  &response_type=code
+
+###
+
+POST https://graph.threads.net/oauth/access_token
+Content-Type: application/x-www-form-urlencoded
+
+client_id={{CLIENT_ID}}&client_secret={{CLIENT_SECRET}}&grant_type=authorization_code&redirect_uri={{REDIRECT_URI}}&code={{CODE}}
+
+###
+GET https://graph.threads.net/access_token?client_id={{CLIENT_ID}}&grant_type=th_exchange_token&client_secret={{CLIENT_SECRET}}&redirect_uri={{REDIRECT_URI}}&access_token={{ACCESS_TOKEN}}
+
+
+
+###
+POST http://localhost:80/api/item
+Content-Type: multipart/form-data
+
+id = 99
+content = new-element
+
+###
+
+#POST https://graph.threads.net/v1.0/{{USER_ID}}/threads?media_type=TEXT&text=%F0%9F%8E%AF%20%EC%98%A4%EB%8A%98%EC%9D%98%20UX%20%EC%86%8D%EB%8B%B4%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%22%EC%99%84%EB%B2%BD%ED%95%9C%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%80%20%EB%8D%94%20%EC%9D%B4%EC%83%81%20%EB%BA%84%20%EA%B2%83%EC%9D%B4%20%EC%97%86%EC%9D%84%20%EB%95%8C%EA%B0%80%20%EC%95%84%EB%8B%88%EB%9D%BC%2C%20%EB%8D%94%20%EC%9D%B4%EC%83%81%20%EC%B6%94%EA%B0%80%ED%95%A0%20%EA%B2%83%EC%9D%B4%20%EC%97%86%EC%9D%84%20%EB%95%8C%EB%8B%A4%22%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%EC%8B%AC%ED%94%8C%ED%95%A8%EC%9D%B4%20%EB%8B%B5%EC%9E%85%EB%8B%88%EB%8B%A4.%20%EA%B8%B0%EB%8A%A5%EC%9D%84%20%EA%B3%84%EC%86%8D%20%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0%EB%B3%B4%EB%8B%A4%EB%8A%94%20%EC%A7%84%EC%A7%9C%20%ED%95%84%EC%9A%94%ED%95%9C%20%EA%B2%83%EB%A7%8C%20%EB%82%A8%EA%B8%B0%EB%8A%94%20%EC%9A%A9%EA%B8%B0%EA%B0%80%20%ED%95%84%EC%9A%94%ED%95%B4%EC%9A%94%20%E2%9C%A8%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%23UX%20%23UI%EB%94%94%EC%9E%90%EC%9D%B8%20%23%EC%8B%AC%ED%94%8C%EB%94%94%EC%9E%90%EC%9D%B8%20%23%EC%82%AC%EC%9A%A9%EC%9E%90%EA%B2%BD%ED%97%98&access_token={{ACCESS_TOKEN}}
+#POST https://graph.threads.net/v1.0/{{USER_ID}}/threads?media_type=TEXT&text=%F0%9F%8E%AF%20%EC%98%A4%EB%8A%98%EC%9D%98%20UX%20%EC%86%8D%EB%8B%B4%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%22%EC%99%84%EB%B2%BD%ED%95%9C%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%80%20%EB%8D%94%20%EC%9D%B4%EC%83%81%20%EB%BA%84%20%EA%B2%83%EC%9D%B4%20%EC%97%86%EC%9D%84%20%EB%95%8C%EA%B0%80%20%EC%95%84%EB%8B%88%EB%9D%BC%2C%20%EB%8D%94%20%EC%9D%B4%EC%83%81%20%EC%B6%94%EA%B0%80%ED%95%A0%20%EA%B2%83%EC%9D%B4%20%EC%97%86%EC%9D%84%20%EB%95%8C%EB%8B%A4%22%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%EC%8B%AC%ED%94%8C%ED%95%A8%EC%9D%B4%20%EB%8B%B5%EC%9E%85%EB%8B%88%EB%8B%A4.%20%EA%B8%B0%EB%8A%A5%EC%9D%84%20%EA%B3%84%EC%86%8D%20%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0%EB%B3%B4%EB%8B%A4%EB%8A%94%20%EC%A7%84%EC%A7%9C%20%ED%95%84%EC%9A%94%ED%95%9C%20%EA%B2%83%EB%A7%8C%20%EB%82%A8%EA%B8%B0%EB%8A%94%20%EC%9A%A9%EA%B8%B0%EA%B0%80%20%ED%95%84%EC%9A%94%ED%95%B4%EC%9A%94%20%E2%9C%A8%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%23UX%20%23UI%EB%94%94%EC%9E%90%EC%9D%B8%20%23%EC%8B%AC%ED%94%8C%EB%94%94%EC%9E%90%EC%9D%B8%20%23%EC%82%AC%EC%9A%A9%EC%9E%90%EA%B2%BD%ED%97%98&access_token={{ACCESS_TOKEN}}
+###
+
+POST https://graph.threads.net/v1.0/{{USER_ID}}/threads_publish?creation_id={{CREATION_ID}}&access_token={{ACCESS_TOKEN}}
+
+###
+POST https://api.x.com/2/tweets
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
+
+{
+  "text" : "hello"
+}
+
+###
+POST https://api.x.com/oauth2/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials&client_id={{CLIENT_ID}}&client_secret={{CLIENT_SECRET}}
+
+###
+POST http://localhost:11434/api/chats
+Content-Type: text/event-stream

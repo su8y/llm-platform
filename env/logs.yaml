@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  config_node:
+    environment:
+      - INTERVAL=1800
+      - RETENTION_DAYS=30
+      - WATCH_CONTAINERS=web, api, database, redis, message-queue, proxy, mcp, vector, etcd, s3, attu, nginx, cadvisor, grafana, prometheus, clickhouse

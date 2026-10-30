@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  config_node:
+    extends:
+      file: secret.yaml
+      service: database
+    environment:
+      - MYSQL_DATABASE=llm_platform

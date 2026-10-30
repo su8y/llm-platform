@@ -1,0 +1,20 @@
+fastmcp>=2.13,<3
+fastapi>=0.119,<1
+httpx==0.28.1
+requests==2.31.0
+python-dotenv==1.1.0
+orjson>=3.11.4,<4
+
+uvicorn>=0.38,<1
+gunicorn==23.0.0
+pydantic>=2.12,<3
+python-multipart==0.0.9
+# AI Provider SDK
+openai==1.97.1
+anthropic==0.60.0
+google-genai==1.55.0
+aioboto3==12.3.0
+xai-sdk==1.4.0
+# LLM
+tiktoken>=0.12,<1
+numpy>=2.3.3,<3

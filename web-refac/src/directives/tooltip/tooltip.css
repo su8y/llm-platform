@@ -1,0 +1,89 @@
+.base-tooltip {
+    pointer-events: none;
+    width: max-content;
+    text-align: left;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 2147483647;
+    word-break: break-all;
+    box-sizing: border-box;
+    box-shadow:
+            0 8px 15px 0 rgba(0, 0, 0, 0.16),
+            0 0 0 1px rgba(0, 0, 0, 0.16);
+}
+.base-tooltip.small {
+    font-size: 0.8em;
+}
+
+.base-tooltip::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    /* clip-path: polygon(0 0, 100% 0, 50% 100%); */
+    background-color: inherit;
+    margin: -1px;
+}
+.base-tooltip.theme-dark {
+    background-color: #505050;
+    color: #ffffff;
+}
+.base-tooltip[class*='top']::after {
+    top: 100%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    box-shadow: -1px 1px 0 0 rgba(0, 0, 0, 0.16);
+}
+
+.base-tooltip[class*='bottom']::after {
+    bottom: 100%;
+    transform: translate(-50%, 50%) rotate(-45deg);
+    box-shadow: 1px -1px 0 0 rgba(0, 0, 0, 0.16);
+}
+
+.base-tooltip[class*='left']::after {
+    left: 100%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    box-shadow: 1px -1px 0 0 rgba(0, 0, 0, 0.16);
+}
+
+.base-tooltip[class*='right']::after {
+    right: 100%;
+    transform: translate(50%, -50%) rotate(45deg);
+    box-shadow: -1px 1px 0 0 rgba(0, 0, 0, 0.16);
+}
+
+.base-tooltip.top-start::after,
+.base-tooltip.bottom-start::after {
+    left: max(15%, 15px);
+}
+.base-tooltip.top-center::after,
+.base-tooltip.bottom-center::after {
+    left: 50%;
+}
+.base-tooltip.top-end::after,
+.base-tooltip.bottom-end::after {
+    right: max(15%, 15px);
+}
+
+.base-tooltip.left-start::after,
+.base-tooltip.right-start::after {
+    top: max(10%, 15px);
+}
+.base-tooltip.left-center::after,
+.base-tooltip.right-center::after {
+    top: 50%;
+}
+.base-tooltip.left-end::after,
+.base-tooltip.right-end::after {
+    bottom: max(10%, 15px);
+}
+
+.btf-tooltip {
+    color: #000;
+    background-color: #fff;
+    padding: 7px 10px 5px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-family: Roboto;
+}

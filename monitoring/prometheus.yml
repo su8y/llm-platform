@@ -1,0 +1,38 @@
+# prometheus/prometheus.yml
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    monitor: 'llm-platform-monitor'
+
+# Alertmanager 설정 (선택)
+# alerting:
+#   alertmanagers:
+#     - static_configs:
+#         - targets: ['alertmanager:9093']
+
+# 메트릭 수집 대상
+scrape_configs:
+  # Prometheus 자체 모니터링
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  # cAdvisor (Docker 컨테이너 메트릭)
+  - job_name: 'cadvisor'
+    static_configs:
+      - targets: ['cadvisor:8080']
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        replacement: 'docker-host'
+
+  # Container Name Exporter (컨테이너 ID to Name 매핑)
+  - job_name: 'container-names'
+    static_configs:
+      - targets: ['container-name-exporter:9998']
+
+  # Node Exporter (호스트 메트릭, 필요시)
+  # - job_name: 'node-exporter'
+  #   static_configs:
+  #     - targets: ['node-exporter:9100']

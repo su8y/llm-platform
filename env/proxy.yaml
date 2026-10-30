@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  config_node:
+    extends:
+      file: secret.yaml
+      service: llm-proxy
+    environment:
+      - SERVER_STAGE=docker # production, staging, docker, docker-local
+      - LOCAL_URL=http://host.docker.internal:1234/v1
+      - VLLM_SSL_VERIFY=false  # vLLM 사설 인증서용. 정식 인증서면 true
+      - VLLM_MODEL=openai/gpt-oss-20b   # vLLM에 로드된 모델명 (--served-model-name)
+      - VLLM_MCP_MODEL=google/gemma-3-27b   # tool calling(MCP) 경로용. 비우면 VLLM_MODEL 사용
+      - VLLM_EMBEDDING_URL=http://host.docker.internal:5432/embedding
+      # MCP Integration
+      - ENABLE_MCP=true
+      - MCP_AGENT_URL=http://mcp:8002/mcp

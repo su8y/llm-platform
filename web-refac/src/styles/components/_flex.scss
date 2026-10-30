@@ -1,0 +1,72 @@
+@import '../base/variables';
+
+.flex {
+  display: flex;
+
+  // align-items
+  &.y {
+    &-center {
+      align-items: center;
+    }
+    &-start {
+      align-items: flex-start;
+    }
+    &-end {
+      align-items: flex-end;
+    }
+  }
+
+  // justify-content
+  &.x {
+    &-center {
+      justify-content: center;
+    }
+    &-start {
+      justify-content: flex-start;
+    }
+    &-end {
+      justify-content: flex-end;
+    }
+    &-between {
+      justify-content: space-between;
+    }
+  }
+
+  &.xy-center {
+    align-items: center;
+    justify-content: center;
+  }
+
+  // flex-direction
+  &.flex-column {
+    flex-direction: column;
+  }
+  &.flex-row {
+    flex-direction: row;
+  }
+  &.row-reverse {
+    flex-direction: row-reverse;
+  }
+  &.flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  // flex gap
+  &.gap {
+    &-4 {
+      gap: $number-4;
+    }
+    &-8 {
+      gap: $number-8;
+    }
+    &-12 {
+      gap: $number-12;
+    }
+    &-16 {
+      gap: $number-16;
+    }
+    &-20 {
+      gap: $number-20;
+    }
+  }
+}

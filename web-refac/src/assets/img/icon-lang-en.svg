@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+    <defs>
+        <circle id="a" cx="12" cy="12" r="12"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+        <circle cx="12" cy="12" r="12.5" stroke="#D7D7D7"/>
+        <g stroke="#408ECC" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" transform="translate(3.3 3.3)">
+            <ellipse cx="8.693" cy="8.693" fill-rule="nonzero" rx="4.602" ry="8.693"/>
+            <path d="M8.693 0v17.387M16.992 6.1H.388M16.905 11.533H.475"/>
+            <circle cx="8.693" cy="8.693" r="8.693"/>
+        </g>
+    </g>
+</svg>

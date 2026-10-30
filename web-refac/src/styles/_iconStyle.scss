@@ -1,0 +1,141 @@
+@import 'base/variables';
+// color
+$icon-blue: $primary-md;
+$icon-primary: #ec0047;
+$icon-white: $whiteColor;
+$icon-grey-md: $grey-500;
+$icon-grey-sm: $grey-400;
+$icon-grey-xs: $grey-300;
+$icon-grey-xxs: $grey-100;
+
+.be-icon {
+  display: inline-block;
+  font-size: $font-24;
+  color: $icon-grey-xs;
+  cursor: pointer;
+  transition: all .3s;
+
+  &.icon {
+    &-white {
+      color: $icon-white;
+    }
+
+    &-blue {
+      color: $icon-blue;
+    }
+
+    &-primary {
+      color: $icon-primary;
+    }
+
+    &-grey-md {
+      color: $icon-grey-md;
+    }
+
+    &-grey-sm {
+      color: $icon-grey-sm;
+    }
+
+    &-grey-xs {
+      color: $icon-grey-xs;
+    }
+
+    &-grey-xxs {
+      color: $icon-grey-xxs;
+    }
+
+  }
+
+  // size
+  &.size {
+    &-12 {
+      width: 12px;
+      height: 12px;
+      font-size: 12px;
+    }
+    &-14 {
+      width: 14px;
+      height: 14px;
+      font-size: $font-14;
+    }
+    &-15 {
+      width: 15px;
+      height: 15px;
+      font-size: $font-15;
+    }
+    &-16 {
+      width: 16px;
+      height: 16px;
+      font-size: $font-16;
+    }
+    &-18 {
+      width: 18px;
+      height: 18px;
+      font-size: $font-16;
+    }
+    &-20 {
+      width: 20px;
+      height: 20px;
+      font-size: $font-20;
+    }
+    &-22 {
+      width: 22px;
+      height: 22px;
+      font-size: $font-22;
+    }
+    &-24 {
+      width: 24px;
+      height: 24px;
+      font-size: $font-24;
+    }
+    &-28 {
+      width: 28px;
+      height: 28px;
+      font-size: $font-28;
+    }
+    &-32 {
+      width: 32px;
+      height: 32px;
+      font-size: $font-32;
+    }
+    &-50 {
+      width: 50px;
+      height: 50px;
+      font-size: $font-50;
+    }
+    &-60 {
+      width: 60px;
+      height: 60px;
+      font-size: $font-60;
+    }
+  }
+
+  &.hover-size {
+    &-24 {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: $font-20;
+    }
+    &-34 {
+      width: 34px;
+      height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: $font-24;
+    }
+  }
+
+  &.hover:hover {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $radius-8;
+    background-color: $hover-grey-bg;
+  }
+}

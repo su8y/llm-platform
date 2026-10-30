@@ -1,0 +1,150 @@
+@import '../base/variables';
+@import '../base/fontStyle';
+
+// status style
+$status: (
+  reqExtraInfo: $statusGreen,
+  needSolve: $statusYellow,
+  confirming: $statusViolet,
+  editing: $primary-sm,
+  checking: $primary-sm,
+  editComplete: $grey-300,
+  notIssue: $grey-300,
+  completeAnswer: $grey-300
+);
+
+$penpalStatus: (
+  parsed: #D4EABD,
+  answering: #BADFFF,
+  sent: #FFFCED,
+  spam: #EBEBEB,
+  close: #FFFCED,
+);
+
+$dashboardPenpalStatus: (
+  parsed: #04A6FF,
+  answering: #004585,
+  sent: #FFD900,
+  spam: #d7d7d7,
+  close: #9ACC67,
+);
+
+@each $name, $color in $penpalStatus {
+  .status-#{$name} {
+    display: inline-block;
+    width: 80px;
+    background-color: $color;
+    text-align: center;
+    padding: 3px 8px;
+    border-radius: 52px;
+    font-size: 12px;
+    font-weight: $semiBold;
+    letter-spacing: -0.12px;
+
+    @if $name == 'parsed' {
+      color: #006200;
+    } @else if $name == 'answering' {
+      color: #1760EC;
+    } @else if  $name == 'close' {
+      color: #72620F;
+    } @else if $name == 'sent' {
+      color: #72620F;
+    } @else {
+      color: #666;
+    }
+  }
+}
+
+@each $name, $color in $dashboardPenpalStatus {
+  .dashboard-status {
+    display: inline-flex;
+    height: 22px;
+    padding: 8px 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+
+    .label-status-#{$name} {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 100px;
+      background-color: $color;
+    }
+  }
+}
+
+.current-status {
+  @each $name, $color in $penpalStatus {
+    &.status-#{$name} {
+      display: inline-block;
+      width: 80px;
+      background-color: $color;
+      text-align: center;
+      padding: 3px 8px;
+      margin: 4px 12px;
+      border-radius: 52px;
+      font-size: 12px;
+      font-weight: $semiBold;
+      letter-spacing: -0.12px;
+
+      @if $name == 'parsed' {
+        color: #006200;
+      } @else if $name == 'answering' {
+        color: #1760EC;
+      } @else if  $name == 'close' {
+        color: #72620F;
+      } @else if $name == 'sent' {
+        color: #72620F;
+      } @else {
+        color: #666;
+      }
+    }
+  }
+}
+
+@each $name, $color in $status {
+  .status-#{$name} {
+    display: inline-block;
+    width: 100px;
+    background-color: $color;
+    color: $whiteColor;
+    text-align: center;
+    padding: 3px 8px;
+    border-radius: 52px;
+    font-size: 12px;
+    font-weight: $semiBold;
+    letter-spacing: -0.12px;
+  }
+
+  @if($name == 'needSolve') {
+    .status-#{$name} {
+      color: $common-red;
+    }
+  }
+}
+
+.current-status {
+  position: relative;
+  background-color: initial;
+  color: $grey-700;
+  padding: 4px 12px;
+  width: 120px;
+
+  @each $name, $color in $status {
+    &.status-#{$name} {
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(90%, -50%);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $color;
+      }
+    }
+  }
+}

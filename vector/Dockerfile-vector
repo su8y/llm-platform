@@ -1,0 +1,2 @@
+FROM milvusdb/milvus:v2.6.11
+CMD ["milvus", "run", "standalone"]

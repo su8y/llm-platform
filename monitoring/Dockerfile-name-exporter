@@ -1,0 +1,14 @@
+FROM python:3.14-alpine
+
+LABEL description="Container name exporter for Prometheus"
+
+WORKDIR /app
+
+COPY requirements.lock .
+RUN pip install --no-cache-dir --require-hashes -r requirements.lock
+
+COPY container-name-exporter.py /app/
+
+EXPOSE 9998
+
+CMD ["python3", "container-name-exporter.py"]

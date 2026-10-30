@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "llm-platform-mcp-server": {
+      "command": "/path/to/mcp-agent/run_server.sh",
+      "args": []
+    }
+  }
+}

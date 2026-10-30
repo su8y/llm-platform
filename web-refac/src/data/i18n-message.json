@@ -1,0 +1,3108 @@
+{
+  "meta": {
+    "version": "1.5_20251014"
+  },
+  "messages": {
+    "common": {
+      "start": {
+        "ko": "AI 어시스턴트 시작하기",
+        "ja": "AIアシスタントを始める",
+        "en": "Get Started with the assistant"
+      },
+      "login": {
+        "ko": "로그인",
+        "ja": "ログイン",
+        "en": "Sign In"
+      },
+      "logout": {
+        "ko": "로그아웃",
+        "ja": "ログアウト",
+        "en": "Sign Out"
+      },
+      "adminRegister": {
+        "ko": "관리자 회원가입",
+        "ja": "管理者登録",
+        "en": "Admin Sign Up"
+      },
+      "findPassword": {
+        "ko": "비밀번호 재설정",
+        "ja": "パスワードの再設定",
+        "en": "Forgot Password"
+      },
+      "cancel": {
+        "ko": "취소",
+        "ja": "キャンセル",
+        "en": "Cancel"
+      },
+      "cancel2": {
+        "ko": "취소하기",
+        "ja": "キャンセル",
+        "en": "Cancel"
+      },
+      "inquiryCancel": {
+        "ko": "취소하기",
+        "ja": "キャンセルする",
+        "en": "Cancel"
+      },
+      "more": {
+        "ko": "AI 어시스턴트 더 자세히 알아보기",
+        "ja": "Kintlogの詳細はこちら",
+        "en": "Learn More About the assistant"
+      },
+      "finding": {
+        "ko": "자세히 알아보기",
+        "ja": "詳細はこちら",
+        "en": "Learn More",
+        "comment": "250905 다국어 확인 필요"
+      },
+      "confirm": {
+        "ko": "확인",
+        "ja": "確認",
+        "en": "Confirm"
+      },
+      "save": {
+        "ko": "저장",
+        "ja": "保存",
+        "en": "Save"
+      },
+      "save2": {
+        "ko": "저장하기",
+        "ja": "保存する",
+        "en": "Save"
+      },
+      "delete": {
+        "ko": "삭제",
+        "ja": "削除",
+        "en": "Delete"
+      },
+      "delete2": {
+        "ko": "삭제하기",
+        "ja": "削除する",
+        "en": "Delete"
+      },
+      "edit": {
+        "ko": "수정",
+        "ja": "編集",
+        "en": "Edit"
+      },
+      "edit2": {
+        "ko": "수정하기",
+        "ja": "編集する",
+        "en": "Edit"
+      },
+      "search": {
+        "ko": "검색하기",
+        "ja": "検索する",
+        "en": "Search"
+      },
+      "close": {
+        "ko": "닫기",
+        "ja": "閉じる",
+        "en": "Close"
+      },
+      "change": {
+        "ko": "변경",
+        "ja": "変更する",
+        "en": "Confirm"
+      },
+      "invite": {
+        "ko": "초대하기",
+        "ja": "招待する",
+        "en": "Invite"
+      },
+      "terminate": {
+        "ko": "해지",
+        "ja": "解約",
+        "en": "Cancel Plan"
+      },
+      "searchFilter": {
+        "ko": "검색 필터",
+        "ja": "検索",
+        "en": "Search Filters"
+      },
+      "refresh": {
+        "ko": "새로고침",
+        "ja": "リフレッシュ",
+        "en": "Reset"
+      },
+      "next": {
+        "ko": "계속",
+        "ja": "次へ",
+        "en": "Continue"
+      },
+      "introduction": {
+        "ko": "지식 관리와 상담 지원을 하나의 AI 워크스페이스에서",
+        "en": "Knowledge management and support, in one AI workspace.",
+        "ja": "ナレッジ管理とサポートをひとつのAIワークスペースで"
+      },
+      "greetings": {
+        "ko": "{name} 님<br> 안녕하세요.",
+        "ja": "{name} さん<br>こんにちは。",
+        "en": "Hello,<br> {name}!"
+      },
+      "assistantMessage": {
+        "ko": "오늘도 <span style='color: #ec0047;'>AI 어시스턴트</span>가 든든한 어시스턴트가 <br>되어드릴게요!",
+        "ja": "今日も<span style='color: #ec0047;'>AIアシスタント</span>があなたの頼れる<br>アシスタントになります！",
+        "en": "<span style='color: #ec0047;'>the assistant</span> is here to assist you<br> every step of the way today, too!"
+      },
+      "pageCount": {
+        "ko": "{count}개씩 보기",
+        "ja": "{count}件表示",
+        "en": "{count} per page"
+      },
+      "statusList": {
+        "all": {
+          "ko": "전체",
+          "ja": "すべて",
+          "en": "All"
+        },
+        "needSolve": {
+          "ko": "처리 필요",
+          "ja": "未処理",
+          "en": "To Do"
+        },
+        "reqExtraInfo": {
+          "ko": "추가 정보 요청",
+          "ja": "返信待ち",
+          "en": "Needs Info"
+        },
+        "confirming": {
+          "ko": "확인 중",
+          "ja": "確認中",
+          "en": "Confirming"
+        },
+        "editing": {
+          "ko": "수정 중",
+          "ja": "修正中",
+          "en": "Editing"
+        },
+        "checking": {
+          "ko": "검수 중",
+          "ja": "検証中",
+          "en": "Checking"
+        },
+        "editComplete": {
+          "ko": "수정 완료",
+          "ja": "検証完了",
+          "en": "Edited"
+        },
+        "notIssue": {
+          "ko": "이슈 없음",
+          "ja": "解決済み",
+          "en": "No Issue"
+        },
+        "completeAnswer": {
+          "ko": "추가 답변 완료",
+          "ja": "追加回答済み",
+          "en": "Answered"
+        }
+      },
+      "onReference": {
+        "ko": "참조",
+        "ja": "参照",
+        "en": "Referenced"
+      },
+      "offReference": {
+        "ko": "미참조",
+        "ja": "非参照",
+        "en": "Not Referenced"
+      },
+      "back": {
+        "ko": "목록으로",
+        "ja": "一覧に戻る",
+        "en": "Back to List"
+      },
+      "all": {
+        "ko": "전체",
+        "ja": "すべて",
+        "en": "All"
+      },
+      "detail": {
+        "ko": "자세히 보기",
+        "ja": "詳細",
+        "en": "View Details"
+      },
+      "noData": {
+        "ko": "수집된 데이터가 없습니다.",
+        "ja": "収集されたデータがありません。",
+        "en": "No data collected."
+      },
+      "error": {
+        "user": {
+          "ko": "사용자 데이터를 불러오는 중 오류가 발생했습니다.",
+          "ja": "ユーザーデータの読み込み中にエラーが発生しました。",
+          "en": "Failed to load user data."
+        },
+        "error": {
+          "ko": "오류가 발생했습니다.",
+          "ja": "エラーが発生しました。",
+          "en": "An error occurred."
+        }
+      },
+      "copy": {
+        "ko": "메시지를 복사했습니다.",
+        "ja": "メッセージをコピーしました。",
+        "en": "Message copied."
+      },
+      "updateSuccess": {
+        "ko": "수정되었습니다.",
+        "ja": "編集内容を保存しました。",
+        "en": "Successfully updated."
+      },
+      "content": {
+        "ko": "내용을 입력해 주세요.",
+        "ja": "内容を入力してください",
+        "en": "Please enter the content."
+      },
+      "title": {
+        "ko": "제목을 입력해 주세요.",
+        "ja": "タイトルを入力してください",
+        "en": "Please enter the title."
+      },
+      "saveTemporary": {
+        "ko": "임시저장",
+        "ja": "一時保存",
+        "en": "Save Draft"
+      },
+      "contact": {
+        "ko": "문의",
+        "ja": "お問い合わせ",
+        "en": "Contact"
+      },
+      "sideMenu": {
+        "chat": {
+          "ko": "대화형 업무지원",
+          "en": "Work Chat",
+          "ja": "チャット"
+        },
+        "dashboard": {
+          "ko": "대시보드",
+          "en": "Dashboard",
+          "ja": "ダッシュボード"
+        },
+        "playground": {
+          "ko": "질문하기",
+          "en": "Inquiry",
+          "ja": "AI相談室"
+        },
+        "mcp": {
+          "ko": "AI 에이전트",
+          "en": "AI Agent",
+          "ja": "AIエージェント"
+        },
+        "prompt": {
+          "ko": "프롬프트 관리",
+          "en": "Prompt",
+          "ja": "プロンプト管理"
+        },
+        "mailprompt": {
+          "ko": "프롬프트 관리",
+          "en": "Prompt",
+          "ja": "プロンプト管理"
+        },
+        "history": {
+          "ko": "질문 이력 관리",
+          "en": "History",
+          "ja": "履歴"
+        },
+        "penpal": {
+          "ko": "이메일 업무지원",
+          "en": "Email Support",
+          "ja": "メールサポート"
+        },
+        "inboxList": {
+          "ko": "수신함 목록",
+          "en": "Inbox",
+          "ja": "受信トレイ"
+        },
+        "references": {
+          "ko": "참고자료",
+          "en": "References",
+          "ja": "参考資料"
+        },
+        "board": {
+          "ko": "게시판",
+          "en": "Board",
+          "ja": "掲示板"
+        },
+        "fileDrive": {
+          "ko": "파일 저장소",
+          "en": "File Storage",
+          "ja": "ファイル保存"
+        },
+        "emailRag": {
+          "ko": "발신 이메일",
+          "en": "Sent Emails",
+          "ja": "送信メール"
+        },
+        "setting": {
+          "ko": "환경설정",
+          "en": "Settings",
+          "ja": "環境設定"
+        },
+        "admin": {
+          "ko": "시스템 관리",
+          "en": "Admin",
+          "ja": "システム管理"
+        },
+        "members": {
+          "ko": "사용자 관리",
+          "en": "Users",
+          "ja": "ユーザー管理"
+        },
+        "plan": {
+          "ko": "요금제",
+          "en": "Plans",
+          "ja": "料金プラン"
+        },
+        "penpalDashboard": {
+          "ko": "대시보드",
+          "en": "Dashboard",
+          "ja": "ダッシュボード"
+        },
+        "mailReceive": {
+          "ko": "메일 수신 설정",
+          "en": "Mail Receiving",
+          "ja": "メール受信設定"
+        }
+      },
+      "unit": {
+        "ko": "원",
+        "ja": "円",
+        "en": "KRW"
+      },
+      "unit2": {
+        "ko": "₩{amount}",
+        "ja": "¥{amount}",
+        "en": "₩{amount}"
+      },
+      "footer": {
+        "guideText": {
+          "ko": "상담원의 지식 파트너, 회사 지식의 지능형 라이브러리",
+          "ja": "あなたのサポーター、会社のナレッジのライブラリー",
+          "en": "Knowledge partner for agents, the intelligent library of company knowledge"
+        },
+        "Why": {
+          "title": {
+            "ko": "결정의 시간입니다",
+            "ja": "決断するなら今です",
+            "en": "Time to decide"
+          },
+          "desc1": {
+            "ko": "매일 반복되는 질문, 사라지는 노하우, 늘어나는 교육 비용<br><span class=\"be-font text-yellow inherit\">게시글 하나로 모든 것이 해결됩니다</span>",
+            "ja": "毎日、繰り返される質問、消えていくナレッジ、<br>増えていく教育コスト,<br><span class=\"be-font text-yellow inherit\">ポスト１つで、全て解決できます。</span>",
+            "en": "Daily repetitive questions, disappearing know-how,<br>rising training costs<br><span class=\"be-font text-yellow inherit\">all solved with a single post</span>"
+          },
+          "desc2": {
+            "ko": "오늘 시작하면 내일 바로 효과를 봅니다",
+            "ja": "今日の決断が、<br class='mo'>明日の改善につながります。",
+            "en": "Start today, see results tomorrow"
+          },
+          "button1": {
+            "ko": "지금 무료로 시작하기",
+            "ja": "無料トライアルはこちら",
+            "en": "Start for free now"
+          },
+          "button2": {
+            "ko": "도입 상담 신청",
+            "ja": "導入のご相談 お問い合わせ",
+            "en": "Request a consultation"
+          }
+        },
+        "Main": {
+          "title": {
+            "ko": "스마트한 지식 관리와 고객 응대,<br class='mo'> AI 어시스턴트와 함께 시작하세요",
+            "ja": "スマートなナレッジ管理と<br class='mo'>カスタマーサポート、<br>AIアシスタントではじめましょう",
+            "en": "Start smarter knowledge management <br>and customer support with the assistant",
+            "comment": "250916 수정"
+          },
+          "desc1": {
+            "ko": "복잡한 기술 없이도, 오늘 등록한 정보를 내일 바로 활용할 수 있습니다.<br>4주 무료 체험으로 AI 어시스턴트의 가치를 직접 경험해보세요.",
+            "ja": "面倒な手続きは一切不要。<br class='mo'>今日から始めて、明日からご活用いただけます。<br> 4週間の無料トライアルで、<br class='mo'>AIアシスタントの価値をぜひご体感ください。",
+            "en": "No complex setup needed - <br class='mo'>use the knowledge you register today, starting tomorrow.<br> Experience the value for yourself with a 4-week free trial."
+          },
+          "button1": {
+            "ko": "지금 시작하기",
+            "ja": "すぐはじめる",
+            "en": "Start now"
+          },
+          "button2": {
+            "ko": "제품 소개서 다운로드",
+            "ja": "サービス紹介資料をダウンロード",
+            "en": "Download Product Brochure",
+            "comment": "250905 다국어 확인 필요 - 서비스 소개서에서 제품 소개서로 변경"
+          }
+        },
+        "KMS": {
+          "title": {
+            "ko": "지금 바로 시작하세요",
+            "ja": "今すぐ、はじめましょう",
+            "en": "Get Started Now"
+          },
+          "desc1": {
+            "ko": "복잡한 설정 없이 5분 만에 시작 <br>4주 무료 체험으로 효과를 직접 확인하세요.",
+            "ja": "面倒な設定は不要。5分で使い始められます。<br>4週間の無料トライアルで、実際の効果をお試しください。",
+            "en": "Start in 5 minutes with no complex setup<br> Experience the impact with a 4-week free trial."
+          },
+          "button1": {
+            "ko": "무료 체험 시작하기",
+            "ja": "無料トライアルはこちら",
+            "en": "Start for free now"
+          }
+        },
+        "CS": {
+          "title": {
+            "ko": "상담센터 혁신을 시작하세요",
+            "ja": "カスタマーサポートを変える革新が、<br class='mo'>ここから始まります",
+            "en": "Start your contact center transformation",
+            "comment": "250916 수정"
+          },
+          "desc1": {
+            "ko": "상담원 교육비 60% 절감, 고객 만족도 85% 달성<br>4주 무료 체험으로 효과를 직접 확인하세요",
+            "ja": "オペレーター教育コスト60％削減、顧客満足度85％達成<br>4週間の無料トライアルで効果をご体感ください。",
+            "en": "Reduce training costs by 60%,<br class='mo'> achieve 85% customer satisfaction<br>Try it free for 4 weeks and see the results.",
+            "comment": "250905 다국어 확인 필요"
+          },
+          "button1": {
+            "ko": "무료 체험 시작하기",
+            "ja": "無料トライアルではじめる",
+            "en": "Start for free now"
+          }
+        },
+        "File": {
+          "title": {
+            "ko": "지금 바로 시작하세요",
+            "ja": "今、ご体感ください",
+            "en": "Get Started Now"
+          },
+          "desc1": {
+            "ko": "파일 처리시간 95% 단축<br>4주 무료 체험으로 효과를 직접 확인하세요.",
+            "ja": "ファイル処理時間を95%短縮<br>4週間の無料トライアルで、実際の効果をお試しください。",
+            "en": "95% Faster File Processing<br>Experience the impact with a 4-week free trial.",
+            "comment": "250905 다국어 확인 필요"
+          },
+          "button1": {
+            "ko": "무료 체험 시작하기",
+            "ja": "無料トライアルではじめる",
+            "en": "Start for free now"
+          }
+        }
+      },
+      "header": {
+        "why": {
+          "ko": "왜 AI 어시스턴트인가?",
+          "ja": "AIアシスタントとは？",
+          "en": "Why the assistant?"
+        },
+        "solution": {
+          "ko": "솔루션",
+          "ja": "ソリューション",
+          "en": "Solution"
+        },
+        "solutionSub1": {
+          "ko": "AI 기업 지식관리 솔루션",
+          "ja": "AI ナレッジ管理<br class='pc'>ソリューション",
+          "en": "Enterprise AI Knowledge<br class='pc'> Solution"
+        },
+        "solutionSub2": {
+          "ko": "상담원 효율화 솔루션",
+          "ja": "オペレーター効率化<br class='pc'>ソリューション",
+          "en": "Agent Efficiency Solution"
+        },
+        "solutionSub3": {
+          "ko": "스마트 파일 드라이브 솔루션",
+          "ja": "スマートファイルドライブ<br class='pc'>ソリューション",
+          "en": "Smart File Drive Solution"
+        },
+        "pricing": {
+          "ko": "가격",
+          "ja": "料金",
+          "en": "Pricing"
+        }
+      },
+      "supportFallback": {
+        "ko": "관리자",
+        "en": "the administrator",
+        "ja": "管理者"
+      }
+    },
+    "register": {
+      "title": {
+        "ko": "회원가입",
+        "ja": "会員登録",
+        "en": "Sign Up"
+      },
+      "desc": {
+        "ko": "복잡한 가이드라인 대신, <br>AI 어시스턴트가 명쾌한 답변을 드릴게요!",
+        "ja": "複雑なガイドラインの代わりに <br>AIアシスタントがお答えします！",
+        "en": "No more complicated guidelines— <br>the assistant gives you clear answers!"
+      },
+      "id": {
+        "ko": "아이디",
+        "ja": "アカウント",
+        "en": "ID"
+      },
+      "password": {
+        "ko": "비밀번호",
+        "ja": "パスワード",
+        "en": "Password"
+      },
+      "passwordConfirm": {
+        "ko": "비밀번호 확인",
+        "ja": "パスワードの確認",
+        "en": "Confirm Password*"
+      },
+      "email": {
+        "ko": "이메일",
+        "ja": "メールアドレス",
+        "en": "Email"
+      },
+      "companyName": {
+        "ko": "회사명",
+        "ja": "会社名",
+        "en": "Company Name*"
+      },
+      "department": {
+        "ko": "소속 부서",
+        "ja": "所属部署/チーム",
+        "en": "Department"
+      },
+      "lang": {
+        "ko": "언어",
+        "ja": "言語",
+        "en": "Language"
+      },
+      "phoneNumber": {
+        "ko": "전화번호",
+        "ja": "電話番号",
+        "en": "Contact Number"
+      },
+      "newPassword": {
+        "ko": "새 비밀번호",
+        "ja": "새 비밀번호",
+        "en": "New Password"
+      },
+      "placeholder": {
+        "userId": {
+          "ko": "아이디를 입력해주세요.",
+          "ja": "アカウントを入力してください",
+          "en": "Please enter your Sign-in ID."
+        },
+        "userPassword": {
+          "ko": "비밀번호를 입력해주세요.",
+          "ja": "パスワードを入力してください。",
+          "en": "Please enter your password."
+        },
+        "password": {
+          "ko": "비밀번호는 6자 이상이어야 합니다.",
+          "ja": "暗証番号は6文字以上で作成してください。",
+          "en": "Please enter a minimum of 6 characters."
+        },
+        "email": {
+          "ko": "이메일 형식으로 입력해주세요.",
+          "ja": "メールアドレスを入力してください",
+          "en": "Please enter a valid email address."
+        },
+        "company": {
+          "ko": "회사명을 입력해주세요.",
+          "ja": "会社名を入力してください",
+          "en": "Please enter your Company name."
+        },
+        "department": {
+          "ko": "소속 부서를 입력해주세요.",
+          "ja": "所属部署/チームを入力してください",
+          "en": "Please enter your department."
+        }
+      },
+      "error": {
+        "regExp": {
+          "userId": {
+            "ko": "사용할 수 없는 아이디입니다.",
+            "ja": "このアカウントは使用できません。",
+            "en": "This Sign-in ID is not available."
+          },
+          "password": {
+            "ko": "공백을 제외한 6~20자의 영문 대/소문자, 숫자, 특수문자만 입력하실 수 있습니다.",
+            "ja": "空白を除いた6〜20文字の英数字、特殊文字で入力をしてください。",
+            "en": "6–20 characters required. Use letters, numbers, and special characters. No spaces allowed."
+          },
+          "passwordCheck": {
+            "ko": "입력하신 비밀번호와 일치하지 않습니다.",
+            "ja": "パスワードが一致しません。",
+            "en": "The passwords do not match."
+          },
+          "email": {
+            "ko": "사용할 수 없는 이메일입니다.",
+            "ja": "このメールアドレスは使用できません。",
+            "en": "This email is not available."
+          },
+          "company": {
+            "ko": "회사명을 입력해주세요.",
+            "ja": "会社名を入力してください。",
+            "en": "Please enter your company name."
+          }
+        },
+        "required": {
+          "userId": {
+            "ko": "아이디를 입력해주세요.",
+            "ja": "IDを入力してください。",
+            "en": "Please enter your Sign-in ID."
+          },
+          "password": {
+            "ko": "비밀번호를 입력해주세요.",
+            "ja": "パスワードを入力してください。",
+            "en": "Please enter your Password."
+          },
+          "passwordCheck": {
+            "ko": "비밀번호를 확인해주세요.",
+            "ja": "パスワードを確認してください。",
+            "en": "Please check your password."
+          },
+          "email": {
+            "ko": "이메일을 입력해주세요.",
+            "ja": "メールアドレスを入力してください。",
+            "en": "Please enter your email."
+          },
+          "company": {
+            "ko": "회사명을 입력해주세요.",
+            "ja": "会社名を入力してください。",
+            "en": "Please enter your Company name."
+          },
+          "required": {
+            "ko": "필수 입력 항목입니다.",
+            "ja": "必須項目です。",
+            "en": "This field is required."
+          },
+          "agree": {
+            "ko": "AI 어시스턴트 이용약관과 개인정보처리방침에 동의해 주세요.",
+            "ja": "AIアシスタントの利用規約と プライバシーポリシーに同意してください。",
+            "en": "Please agree to the the assistant Terms of Service and Privacy Policy."
+          }
+        },
+        "duplicated": {
+          "userId": {
+            "ko": "이미 사용중인 아이디입니다.",
+            "ja": "すでに使用されているIDです。",
+            "en": "This Sign-in ID is already in use."
+          },
+          "email": {
+            "ko": "이미 사용중인 이메일입니다.",
+            "ja": "すでに使用されているメールアドレスです。",
+            "en": "This email is is already in use."
+          },
+          "company": {
+            "ko": "이미 사용중인 회사명입니다.",
+            "ja": "すでに使用されている会社名です。",
+            "en": "This company name is already in use."
+          }
+        },
+        "notRegistered": {
+          "id": {
+            "ko": "가입되어 있지 않는 아이디입니다.",
+            "ja": "登録されていないアカウントです。",
+            "en": "Couldn't find your ID."
+          },
+          "password": {
+            "ko": "비밀번호를 다시 확인해 주세요.",
+            "ja": "パスワードを再度ご確認ください。",
+            "en": "Please check your password."
+          }
+        }
+      },
+      "agree": {
+        "ko": "AI 어시스턴트 <a href='/%%locale%%/terms' target='_blank' class='be-font'>이용약관</a> 및 <a href='/%%locale%%/privacy' target='_blank' class='be-font'>개인정보 취급방침</a>에 동의합니다.",
+        "ja": "AIアシスタントの<a href='/%%locale%%/terms' target='_blank' class='be-font'>利用規約</a>・<a href='/%%locale%%/privacy' target='_blank' class='be-font'>プライバシーポリシー</a>への同意。",
+        "en": "I agree to the the assistant <a href='/%%locale%%/terms' target='_blank' class='be-font'>Terms of Service</a> and<br><a href='/%%locale%%/privacy' target='_blank' class='be-font'>Privacy Policy</a>"
+      }
+    },
+    "findPassword": {
+      "title": {
+        "ko": "비밀번호 재설정",
+        "ja": "パスワードの再設定",
+        "en": "Reset Password"
+      },
+      "placeholder": {
+        "userId": {
+          "ko": "가입하신 아이디를 입력해주세요.",
+          "ja": "会員登録したアカウントを入力してください。",
+          "en": "Please enter your Sign-in ID."
+        },
+        "email": {
+          "ko": "가입 당시 입력하신 이메일을 입력해주세요.",
+          "ja": "ご登録のメールアドレスを入力してください",
+          "en": "Please enter the email you registered with."
+        }
+      },
+      "label": {
+        "ko": "새 비밀번호",
+        "ja": "新しいパスワード",
+        "en": "New Password"
+      },
+      "error": {
+        "regExp": {
+          "userId": {
+            "ko": "사용할 수 없는 아이디입니다.",
+            "ja": "このアカウントは使用できません。",
+            "en": "This Sign-in ID is not available."
+          },
+          "email": {
+            "ko": "사용할 수 없는 이메일입니다.",
+            "ja": "このメールアドレスは使用できません。",
+            "en": "This email is not available."
+          }
+        },
+        "required": {
+          "userId": {
+            "ko": "아이디를 입력해주세요.",
+            "ja": "アカウントを入力してください。",
+            "en": "Please enter your Sign-in ID."
+          },
+          "email": {
+            "ko": "이메일을 입력해주세요.",
+            "ja": "メールアドレスを入力してください。",
+            "en": "Please enter your email."
+          }
+        }
+      }
+    },
+    "mail": {
+      "invite": {
+        "title": {
+          "ko": "아직도 가이드라인을 찾아보시나요? <br>AI 어시스턴트가 대신 찾아서 <br>답변을 드릴게요!",
+          "ja": "ガイドラインを探すのに<br>苦労していませんか？<br>AIアシスタントがあなたの代わりに<br>お答えします！",
+          "en": "Still searching for the right guideline? the assistant will find the answer for you!"
+        },
+        "desc": {
+          "ko": "아래 링크를 통해 회원가입을 진행해주세요. <br>링크는 {expireDate}에 만료됩니다.",
+          "ja": "下記リンクより会員登録を行ってください。<br>リンクは{expireDate}まで有効です。",
+          "en": "Please complete your registration by clicking the link below. <br>This link will expire on {expireDate}."
+        },
+        "sender": {
+          "ko": "발신 {{master_id}} ({{company_name}}) <br>본 메일을 통해 가입을 완료하시면 AI 어시스턴트를 이용하실 수 있습니다.",
+          "ja": "ID(会社名)：{{master_id}} ({{company_name}}) <br>「会員登録はこちら」をクリックして登録を完了させてください。",
+          "en": "From {{master_id}} ({{company_name}}) <br>Complete your registration to start using the assistant."
+        }
+      },
+      "certification": {
+        "title": {
+          "ko": "AI 어시스턴트에 오신 걸 환영합니다!",
+          "ja": "AIアシスタントへようこそ！",
+          "en": "Welcome to the assistant!"
+        },
+        "sender": {
+          "ko": "발신 {{master_id}} ({{company_name}}) <br>본 메일을 통해 가입을 완료하시면 AI 어시스턴트를 이용하실 수 있습니다.",
+          "ja": "ID(会社名)：{{master_id}} ({{company_name}}) <br>「認証する」をクリックして登録を完了させてください。",
+          "en": "From {{master_id}} ({{company_name}}) <br>Complete your registration to start using the assistant."
+        }
+      }
+    },
+    "headers": {
+      "playground": {
+        "ko": "채팅 형식으로 질문을 하면 문맥 이해를 통한 고도화 된 AI 기반의 답변을 받아볼 수 있습니다.",
+        "ja": "チャットで質問すると、コンテキストを理解した高度なAIによる回答を確認できます。",
+        "en": "Ask questions in a chat format to receive advanced AI answers with contextual."
+      },
+      "prompt": {
+        "ko": "AI가 정확한 답변을 제공할 수 있도록, 효과적인 프롬프트를 입력해보세요.",
+        "ja": "AIが正確な回答を提供できるよう、目的に合ったプロンプトを作成してください。",
+        "en": "Try entering a clear and specific prompt so the AI can respond accurately."
+      },
+      "dashboard": {
+        "ko": "기간별 평점과 질문 분석으로 더 나은 서비스를 제공하고, 질문 건수 추이로 성장의 흐름을 파악하세요.",
+        "ja": "期間別の評価と質問を分析し、改善効果を確認して、より良いサービスの提供につなげましょう。",
+        "en": "Enhance service with rating and question insights, and monitor growth via question trends."
+      },
+      "historyList": {
+        "ko": "질문 목록의 히스토리로 언제든지 과거 질문과 답변을 빠르게 검토하세요.",
+        "ja": "これまでの質問と回答を、いつでも確認できます。",
+        "en": "Quickly review past questions and answers anytime through your question history."
+      },
+      "referenceList": {
+        "ko": "이 서비스의 성능과 개선을 위한 모든 분석은 신뢰할 수 있는 데이터와 참고자료를 기반으로 합니다.",
+        "ja": "AIアシスタントの性能と改善に関するすべての分析は、信頼できるデータと参考資料に基づいています。",
+        "en": "All performance and improvement analysis is grounded in trusted data and references.",
+        "comment": "250825 수정"
+      },
+      "referenceCategory": {
+        "ko": "원하는 레퍼런스를 쉽게 찾을 수 있도록 카테고리를 체계화해보세요.",
+        "ja": "必要なリファレンスをすぐに見つけられるよう、カテゴリーを整理しましょう。",
+        "en": "Organize your categories to easily find the references you need."
+      },
+      "members": {
+        "ko": "팀원을 초대하고 관리하는 공간입니다.",
+        "ja": "チームメンバーの招待や管理ができるページです。",
+        "en": "You can invite and manage team members in this space."
+      },
+      "plan": {
+        "ko": "맞춤 플랜을 선택하고, 현재 플랜을 관리하는 공간입니다.",
+        "ja": "プランを選択し、現在のプランを管理できるページです。、",
+        "en": "Manage your current plan and choose a custom one here."
+      },
+      "penpal": {
+        "ko": "기간별 답변 건수와 키워드 분석을 통해 고객 문의 흐름을 한눈에 파악하세요.",
+        "ja": "期間別の対応件数とキーワード分析で、お問い合わせの傾向を把握しましょう。",
+        "en": "Track inquiry trends with keyword and response analysis over time."
+      },
+      "inbox": {
+        "ko": "AI 답변생성을 통해 빠르고 편리하게 문의에 대응하세요.",
+        "ja": "AIの応答機能で、お問い合わせ対応をもっと簡単・スピーディーに",
+        "en": "Respond to inquiries quickly and easily with AI-generated replies."
+      },
+      "fileDrive": {
+        "ko": "업로드 된 문서들은 자동으로 분석되어 AI가 활용할 수 있는 지식자산으로 변환됩니다.",
+        "ja": "アップロードされたドキュメントは自動分析され、AI活用可能なナレッジに変換されます。",
+        "en": "Uploaded documents are automatically analyzed and converted into AI-ready assets."
+      },
+      "emailRag": {
+        "ko": "발송한 답변을 학습하여 AI 품질을 지속적으로 향상시킵니다.",
+        "ja": "返信した内容を学習し、 AIの品質を向上させます。",
+        "en": "AI learns from your sent replies to continually enhance its performance."
+      },
+      "penpalDashboard": {
+        "ko": "이메일 업무 현황을 통해 고객 대응 흐름을 한눈에 파악하세요.",
+        "en": "Get an at-a-glance view of your customer response flow from your email operations.",
+        "ja": "メール業務の状況から、顧客対応の流れを一目で把握できます。",
+        "comment": "2025-10-14 다국어 필요"
+      }
+    },
+    "modal": {
+      "warning": {
+        "authority": {
+          "title": {
+            "ko": "해당 사용자의 권한이 변경됩니다.",
+            "ja": "メンバーの権限を変更します。",
+            "en": "User permissions will be changed."
+          },
+          "desc": {
+            "ko": "진행하시겠습니까?",
+            "ja": "本当に変更しますか？",
+            "en": "Would you like to proceed?"
+          }
+        },
+        "secession": {
+          "title": {
+            "ko": "해당 사용자의 정보가 전부 삭제됩니다.",
+            "ja": "選択したメンバーの情報は<br>すべて削除されます。",
+            "en": "All information of this user<br> will be permanently deleted."
+          },
+          "desc": {
+            "ko": "그래도 진행하시겠습니까? <br>(동일 이메일 및 아이디로 재가입 가능합니다.)",
+            "ja": "本当に削除しますか？<br>（同じメールアドレス、IDで再登録が可能です。）",
+            "en": "Are you sure you want to proceed? <br>(You can sign up again with the same email and ID.)"
+          }
+        },
+        "referenceDelete": {
+          "title": {
+            "ko": "선택한 레퍼런스를 삭제하시겠습니까?",
+            "ja": "リファレンスを削除しますか？",
+            "en": "Delete selected references?"
+          },
+          "desc": {
+            "ko": "삭제되면 복구 불가능합니다.",
+            "ja": "削除されたリファレンスは復元できません。",
+            "en": "This action cannot be undone."
+          }
+        },
+        "certificationEmail": {
+          "title": {
+            "ko": "이메일을 먼저 인증해주시기 바랍니다.",
+            "ja": "メールアドレス認証を<br>完了させてからご利用ください。",
+            "en": "Please verify your email first."
+          },
+          "desc": {
+            "ko": "인증까지 완료하시면 서비스를 이용하실 수 있습니다.",
+            "ja": "ご利用にはメールアドレス認証が必要です。",
+            "en": "You’ll be able to use the service once verified."
+          }
+        },
+        "expirationInvitation": {
+          "title": {
+            "ko": "링크가 만료되었습니다.",
+            "ja": "リンクの有効期限が切れています。",
+            "en": "The link has expired."
+          },
+          "desc": {
+            "ko": "초대 메일 재발송은 Master에게 문의 바랍니다.",
+            "ja": "招待メールの再送信は、<br>Master管理者にお問い合わせください。",
+            "en": "Please contact your Master<br> to request a new invitation email."
+          }
+        },
+        "duplicatedEmail": {
+          "title": {
+            "ko": "이미 초대/가입한 이메일 주소가 있습니다.",
+            "ja": "すでに招待または登録されている<br>メールアドレスです。",
+            "en": "There is already an email address <br>that has been invited or registered."
+          },
+          "desc": {
+            "ko": "초대 메일이 만료되거나 탈퇴한 이후에 <br>다시 초대할 수 있습니다.",
+            "ja": "招待メールの有効期限が過ぎた後か、退会後に<br>改めて招待してください。",
+            "en": "You can re-invite the user<br> after the invitation email expires or they withdraw."
+          }
+        },
+        "invalidEmail": {
+          "title": {
+            "ko": "이메일 주소가 유효하지 않습니다.",
+            "ja": "無効なメールアドレスです。",
+            "en": "The email address is not valid."
+          },
+          "desc": {
+            "ko": "이메일 주소 확인 후 다시 시도해주세요.",
+            "ja": "メールアドレスをご確認ください。",
+            "en": "Please verify the email address and try again."
+          }
+        },
+        "duplicatedReInvite": {
+          "title": {
+            "ko": "이미 초대/가입한 이메일 주소입니다.",
+            "ja": "すでに招待または登録されている<br>メールアドレスです。",
+            "en": "There is already an email address <br>that has been invited or registered."
+          },
+          "desc": {
+            "ko": "가입 대기 또는 가입 완료한 이메일의 경우 <br>초대 메일 재전송이 불가합니다.",
+            "ja": "登録待ちまたは登録が完了したメールアドレスには<br>招待メールを再送信できません。",
+            "en": "If the email is in pending or completed registration status, <br>the invitation email cannot be resent."
+          }
+        },
+        "emptyDuplicatedCategory": {
+          "title": {
+            "ko": "카테고리를 추가할 수 없습니다.",
+            "ja": "カテゴリーを追加できません。",
+            "en": "Cannot add category."
+          },
+          "desc": {
+            "ko": "공백 또는 중복되는 카테고리명은 사용하실 수 없습니다.",
+            "ja": "カテゴリー名が空白または重複しています。",
+            "en": "Category names cannot be empty or duplicated."
+          }
+        },
+        "editCategory": {
+          "title": {
+            "ko": "카테고리명을 수정 할 수 없습니다.",
+            "ja": "カテゴリー名を編集できません。",
+            "en": "Cannot edit category."
+          },
+          "desc": {
+            "ko": "공백 또는 중복되는 카테고리명은 사용하실 수 없습니다.",
+            "ja": "カテゴリ名-が空白または重複しています。",
+            "en": "Category names cannot be empty or duplicated."
+          }
+        },
+        "childCategoryExistence": {
+          "title": {
+            "ko": "카테고리를 삭제할 수 없습니다.",
+            "ja": "カテゴリ-を削除できません。",
+            "en": "Cannot delete category."
+          },
+          "desc": {
+            "ko": "해당 카테고리에 속한 레퍼런스 또는<br>하위 분류가 존재할 경우 삭제 불가합니다.",
+            "ja": "カテゴリ-に含まれるリファレンスまたは<br>下位分類が存在する場合、削除できません。",
+            "en": "Categories with subcategories cannot be deleted."
+          }
+        },
+        "deleteCategory": {
+          "title": {
+            "ko": "카테고리를 삭제하시겠습니까?",
+            "ja": "カテゴリ-を削除しますか？",
+            "en": "Delete category?"
+          },
+          "desc": {
+            "ko": "해당 카테고리로 등록된 게시물의 <br>카테고리명은 공백으로 변경됩니다.",
+            "ja": "カテゴリ-内に登録されているリファレンスの<br>カテゴリ名は空白になります。",
+            "en": "Posts assigned to this category <br>will have their category name cleared."
+          }
+        },
+        "cancel": {
+          "title": {
+            "ko": "정말 취소하시겠습니까?",
+            "ja": "本当にキャンセルしますか？",
+            "en": "Are you sure you want to cancel?"
+          },
+          "desc": {
+            "ko": "취소하시면 입력한 내용이 삭제됩니다.",
+            "ja": "キャンセルすると入力した内容は削除されます。",
+            "en": "Your input will be deleted if you cancel."
+          }
+        },
+        "fileUploadError": {
+          "title": {
+            "ko": "파일을 등록할 수 없습니다.",
+            "ja": "ファイルを登録できません。",
+            "en": "Can’t upload the file."
+          },
+          "desc": {
+            "ko": "50MB 이하의 파일만 등록 가능합니다.",
+            "ja": "50MB 以下のファイルのみ、登録できます。",
+            "en": "Only files up to 50 MB can be uploaded."
+          }
+        },
+        "parserCreditError": {
+          "title": {
+            "ko": "파일 등록에 실패했습니다.",
+            "ja": "ファイル登録に失敗しました。",
+            "en": "File registration failed."
+          },
+          "desc": {
+            "ko": "문제가 지속된다면 {email}으로 <br/>연락 부탁드립니다.",
+            "ja": "問題が続く場合、 {email}まで、<br/>お問いわせください。",
+            "en": "If the problem persists, <br/>please contact {email}."
+          }
+        },
+        "planCancel": {
+          "title": {
+            "ko": "플랜을 해지하시려면 <br>운영팀으로 문의 바랍니다.",
+            "ja": "プランの解約をご希望の場合 <br>運営チームへお問い合わせください。",
+            "en": "To cancel your plan, <br>please contact our operations team."
+          },
+          "desc": {
+            "ko": "문의 : {email}",
+            "ja": "お問い合わせ : {email}",
+            "en": "Contact : {email}"
+          }
+        },
+        "delete": {
+          "title": {
+            "ko": "정말 삭제하시겠습니까?",
+            "ja": "本当に削除しますか？",
+            "en": "Are you sure you want to delete this?"
+          },
+          "desc": {
+            "ko": "삭제하시면 되돌릴 수 없습니다.",
+            "ja": "削除すると元に戻せません。",
+            "en": "This action cannot be undone."
+          }
+        },
+        "updatePdfFile": {
+          "title": {
+            "ko": "편집된 내용을 모두 저장합니다.",
+            "ja": "編集した内容をすべて保存します。",
+            "en": "All edited content will be saved."
+          },
+          "desc1": {
+            "ko": "수정된 페이지: {pages}",
+            "ja": "編集済みページ: {pages}",
+            "en": "Edited page {pages}"
+          },
+          "desc2": {
+            "ko": "저장을 진행하시겠습니까?",
+            "ja": "保存しますか？",
+            "en": "Do you want to save?"
+          }
+        },
+        "updatePdfCancel": {
+          "title": {
+            "ko": "수정을 취소하시겠습니까?",
+            "ja": "編集をキャンセルしますか？",
+            "en": "Do you want to cancel the edits?"
+          },
+          "desc": {
+            "ko": "‘확인’을 누르시면 <br/>현재까지 저장된 모든 편집 사항이 취소되고, <br />읽기 모드로 돌아갑니다.",
+            "ja": "「確認」を押すと、<br />現在までの保存されていない編集内容がすべてキャンセルされ、<br>元の画面に戻ります。",
+            "en": "Press ‘Confirm’ to cancel all unsaved edits <br />and return to the original view."
+          }
+        },
+        "deletePdfFile": {
+          "title": {
+            "ko": "이 파일을 삭제하시겠습니까?",
+            "ja": "このファイルを削除しますか？",
+            "en": "Do you want to delete this file?"
+          },
+          "desc": {
+            "ko": "‘확인’을 누르시면 해당 파일은 삭제되며, <br/>이 문서의 내용을 참조할 수 없습니다.",
+            "ja": "「確認」を押すと、<br />このファイルは削除され、<br />このドキュメントの内容を参照できなくなります。",
+            "en": "Press ‘Confirm’ to delete this file. <br>You will no longer be able to reference this document."
+          }
+        },
+        "passwordExpired": {
+          "title": {
+            "ko": "링크가 만료되었습니다.",
+            "ja": "リンクの有効期限が切れてます。",
+            "en": "The link has expired."
+          },
+          "desc": {
+            "ko": "다시 비밀번호 찾기를 시도해 주시기 바랍니다.",
+            "ja": "もう一度、パスワードの再設定を行なってください。",
+            "en": "Please try to reset your password again."
+          }
+        },
+        "attachmentError": {
+          "title": {
+            "ko": "파일을 업로드할 수 없습니다.",
+            "ja": "ファイルをアップロードできません。",
+            "en": "Unable to upload the file."
+          },
+          "desc": {
+            "ko": "첨부 파일은 총 20MB까지 업로드 가능합니다.",
+            "ja": "添付ファイルは合計20MBまでアップロード可能です。",
+            "en": "You can upload up to 20MB in total for attachments."
+          }
+        },
+        "sendMailError": {
+          "title": {
+            "ko": "메일을 보낼 수 없습니다.",
+            "en": "Unable to send email.",
+            "ja": "メールを送信できません。"
+          },
+          "desc": {
+            "ko": "{type} 확인 필요",
+            "en": "Please check {type}",
+            "ja": "{type}をご確認ください。"
+          }
+        },
+        "checkBeforeEmail": {
+          "title": {
+            "ko": "이후 메일이 존재합니다.",
+            "en": "Subsequent emails exist.",
+            "ja": "本メール以降に届いたメールがあります。"
+          },
+          "desc": {
+            "ko": "본 메일에 답변을 보내시겠습니까?",
+            "en": "Would you like to reply to this email?",
+            "ja": "このメールに返信をしますか？"
+          }
+        },
+        "emailCountError": {
+          "title": {
+            "ko": "수신자는 최대 50명까지만 <br/>입력할 수 있습니다.",
+            "en": "You can enter up to 50 recipients <br>only.",
+            "ja": "受取人は最大50名まで<br>入力できます。"
+          }
+        },
+        "failedSendMail": {
+          "title": {
+            "ko": "메일 전송에 실패했습니다",
+            "en": "Failed to send email.",
+            "ja": "メール送信に失敗しました。"
+          },
+          "desc": {
+            "ko": "메일 주소가 올바른지 확인 후 다시 시도해 주세요.<br/>문제가 지속된다면 {email}으로 <br/>연락 부탁드립니다.",
+            "en": "Check the address and try again.<br/>If the issue persists, contact us at {email}.",
+            "ja": "アドレス確認後、再試行してください。<br/>問題が解決しない場合は、<br/>{email} までお問い合わせください。"
+          }
+        }
+      },
+      "success": {
+        "authenticationEmail": {
+          "title": {
+            "ko": "이메일이 인증되었습니다.",
+            "ja": "メールアドレスの認証が<br>完了しました。",
+            "en": "Your email has been verified."
+          }
+        },
+        "temporarySave": {
+          "title": {
+            "ko": "임시 저장되었습니다.",
+            "ja": "一時保存が完了しました。",
+            "en": "Saved as draft."
+          },
+          "desc": {
+            "ko": "이후 글쓰기에 접속하시면 이어서 작성할 수 있습니다.",
+            "ja": "編集画面から、いつでも続きを作成できます。",
+            "en": "You can resume writing from the draft later."
+          }
+        },
+        "resetPassword": {
+          "title": {
+            "ko": "비밀번호가 재설정되었습니다.",
+            "ja": "新しいパスワードが再設定できました。",
+            "en": "Password Reset Complete."
+          },
+          "desc": {
+            "ko": "새로운 비밀번호로 로그인하시길 바랍니다.",
+            "ja": "新しいパスワードでログインしてください。",
+            "en": "You can now sign in using your new password."
+          }
+        }
+      },
+      "sendMail": {
+        "invite": {
+          "title": {
+            "ko": "초대 메일이 발송되었습니다.",
+            "ja": "招待メールを送信しました。",
+            "en": "An invitation email has been sent."
+          },
+          "desc": {
+            "ko": "가입 진행 상황은 사용자 관리에서 확인 가능합니다.",
+            "ja": "メンバーの登録状況は、<br>ユーザー管理ページでご確認いただけます。",
+            "en": "You can check the registration status in Users.",
+            "comment": "250825 수정"
+          }
+        },
+        "register": {
+          "title": {
+            "ko": "인증 메일이 발송되었습니다.",
+            "ja": "認証メールを送信しました。",
+            "en": "Verification Email Sent."
+          },
+          "desc": {
+            "ko": "메일이 수신되지 않은 경우,<br>스팸 메일함을 확인해 주시기 바랍니다. <br>문제가 지속된다면 {email}으로 <br>연락 부탁드립니다.",
+            "ja": "メールが届かない場合は、<br>迷惑メールフォルダをご確認ください。<br>問題が解決しない場合は、<br>{email}までお問い合わせください。",
+            "en": "If you haven’t received the email,<br>please check your spam folder. <br>If the issue persists, contact us at <br>{email}."
+          }
+        },
+        "resetPassword": {
+          "title": {
+            "ko": "메일 발송 완료",
+            "ja": "メール送信完了",
+            "en": "Password Reset Email Sent."
+          },
+          "desc": {
+            "ko": "비밀번호 재설정 링크가 발송되었습니다. <br>이메일을 확인해주세요.",
+            "ja": "パスワードの再設定リンクが送信されました。<br>メールをご確認ください。",
+            "en": "A password reset link has been sent. <br>Please check your email."
+          }
+        }
+      },
+      "successDelete": {
+        "ko": "삭제되었습니다.",
+        "ja": "削除しました。",
+        "en": "Deleted successfully."
+      },
+      "updateSuccess": {
+        "ko": "수정되었습니다.",
+        "ja": "編集内容を保存しました。",
+        "en": "Changes saved."
+      },
+      "sessionExpired": {
+        "ko": "로그인 세션이 만료되었습니다. 다시 로그인 해주세요.",
+        "ja": "セッションがタイムアウトしました。再度ログインしてください。",
+        "en": "Your login session has expired. Please log in again."
+      },
+      "errorUser": {
+        "ko": "사용자 데이터를 불러오는 중 오류가 발생했습니다.",
+        "ja": "ユーザーデータの読み込み中にエラーが発生しました。",
+        "en": "Failed to load user data."
+      },
+      "postCapacity": {
+        "ko": "게시글 용량이 초과되었습니다. 다시 확인해주세요.",
+        "ja": "記事の容量が上限を終えています。内容を簡潔にまとめてください。",
+        "en": "Post size limit exceeded. Please check again."
+      },
+      "save": {
+        "ko": "저장하시겠습니까?",
+        "ja": "保存しますか？",
+        "en": "Do you want to save?"
+      },
+      "checkReply": {
+        "ko": "답변을 보내시겠습니까?",
+        "en": "Would you like to send a reply?",
+        "ja": "返信を送信しますか？"
+      },
+      "temporarySaveError": {
+        "ko": "코멘트는 필수입니다.",
+        "en": "Comment is required.",
+        "ja": "コメントは必須です。"
+      }
+    },
+    "playground": {
+      "stop": {
+        "ko": "생성 멈추기",
+        "ja": "停止する",
+        "en": "Stop generating"
+      },
+      "reset": {
+        "ko": "초기화",
+        "ja": "リセット",
+        "en": "Reset"
+      },
+      "question": {
+        "ko": "궁금한 내용을 질문하세요.",
+        "ja": "知りたいことを質問してみましょう！",
+        "en": "Ask your questions."
+      },
+      "reference": {
+        "ko": "참조 데이터 보기",
+        "ja": "参照データを見る",
+        "en": "View Reference"
+      },
+      "rating": {
+        "ko": "답변 평가하기",
+        "ja": "回答を評価",
+        "en": "Evaluate the response"
+      },
+      "comment": {
+        "ko": "Comment",
+        "ja": "コメント",
+        "en": "Comment"
+      },
+      "commentPlaceholder": {
+        "ko": "100자 이내로 작성해주세요.",
+        "ja": "100字以内で入力してください。",
+        "en": "Enter up to 100 characters."
+      },
+      "me": {
+        "ko": "나",
+        "ja": "あなた",
+        "en": "Me"
+      },
+      "defaultGreeting": {
+        "ko": "안녕하세요, AI 어시스턴트에 오신 걸 환영합니다. <br class='only-mobile'>등록하신 참고자료 기반으로 AI 어시스턴트 GPT가 답변해드릴게요!",
+        "ja": "こんにちは！AIアシスタントへようこそ。<br>登録された参考資料をもとにAIアシスタント GPTが質問にお答えします！",
+        "en": "Welcome to the assistant! <br class='only-mobile'>the assistant GPT will assist you based on the reference data you’ve registered.",
+        "comment": "250825 수정"
+      },
+      "mainGreeting": {
+        "ko": "안녕하세요, AI 어시스턴트에 관한 궁금증이 있으시다면, 저에게 질문해주세요 🥰",
+        "ja": "こんにちは！AIアシスタントに関するご質問があれば、何でもお問い合わせください🥰",
+        "en": "Hello! Got any questions about the assistant? I'm here to help 🥰"
+      },
+      "askStop": {
+        "ko": "요청에 따라 답변 생성을 중단했습니다. 생성이 시작된 질문이므로, 잔여 질문 1건이 차감되었습니다.",
+        "ja": "リクエストにより、回答の作成を中断しました。こちらはすでに回答済みの質問のため、残余質問数が1件消費されました。",
+        "en": "The response generation was stopped as requested. Since the answer had already started, one remaining question has been deducted."
+      }
+    },
+    "reference": {
+      "reference": {
+        "ko": "참조 데이터",
+        "ja": "参照データ",
+        "en": "Reference"
+      },
+      "source": {
+        "ko": "출처",
+        "ja": "参照元",
+        "en": "Source"
+      }
+    },
+    "dateTime": {
+      "format": {
+        "ko": "{year}년 {month}월 {day}일 {hour}:{minute}:{second}",
+        "ja": "{year}年{month}月{day}日 {hour}:{minute}:{second}",
+        "en": "{month} {day}, {year} {hour}:{minute}:{second}"
+      }
+    },
+    "prompt": {
+      "desc": {
+        "ko": "현재 작성 중인 프롬프트가 저장되면 자동으로 생성됩니다.",
+        "ja": "現在作成中のプロンプトを保存すると、バージョンが自動生成されます。",
+        "en": "A version will be automatically created when the current prompt is saved."
+      },
+      "greeting": {
+        "ko": "인사말",
+        "ja": "ご挨拶",
+        "en": "Greeting"
+      },
+      "save": {
+        "ko": "프롬프트 저장 완료",
+        "ja": "プロンプトを保存しました。",
+        "en": "Prompt saved successfully."
+      },
+      "failed": {
+        "ko": "프롬프트 저장에 실패했습니다.",
+        "ja": "プロンプトの保存に失敗しました。",
+        "en": "Failed to save the prompt."
+      },
+      "isSaved": {
+        "ko": "프롬프트를 저장하시겠습니까?",
+        "ja": "プロンプトを保存しますか？",
+        "en": "Do you want to save the prompt?"
+      }
+    },
+    "dashboard": {
+      "dateRange": {
+        "ko": "조회 기간",
+        "ja": "照会期間",
+        "en": "View Period"
+      },
+      "rating": {
+        "ko": "응답 평점",
+        "ja": "回答の評価",
+        "en": "Response Rating"
+      },
+      "ratingGraph": {
+        "ko": "평점 추이",
+        "ja": "回答の推移",
+        "en": "Rating Trend"
+      },
+      "answerCount": {
+        "ko": "응답 건수",
+        "ja": "回答件数",
+        "en": "Number of Responses"
+      },
+      "answerCountDesc": {
+        "ko": "일 평균 {average}건 (전체 {total}건)",
+        "ja": "日平均{average}件（全体：{total}件）",
+        "en": "Avg. {average} per day (Total {total})"
+      },
+      "askQuestion": {
+        "ko": "ASK 단일질문",
+        "ja": "ASK質問件数",
+        "en": "ASK Single Questions"
+      },
+      "askSession": {
+        "ko": "ASK 세션",
+        "ja": "ASKセッション数",
+        "en": "ASK Sessions"
+      },
+      "ratingTarget": {
+        "ko": "평점대상",
+        "ja": "対象評価：",
+        "en": "Rated"
+      },
+      "ratingDesc": {
+        "ko": "{average}건 (전체 {total}건 중 {percent}%)",
+        "ja": "{average}件（全体{total}件中{percent}%）",
+        "en": "{average} (out of {total} total {percent}%)"
+      },
+      "askTop": {
+        "ko": "ASK Top3",
+        "ja": "ASK Top3",
+        "en": "ASK Top3"
+      },
+      "comingSoon": {
+        "ko": "준비중 입니다.",
+        "ja": "準備中",
+        "en": "Coming soon!"
+      }
+    },
+    "historyList": {
+      "search": {
+        "chatDate": {
+          "ko": "최초 대화 시작 일자",
+          "ja": "初回セッション開始日",
+          "en": "Chat Start Date"
+        },
+        "incomingType": {
+          "ko": "인입 유형",
+          "ja": "お問い合わせの経緯",
+          "en": "Inquiry Source"
+        },
+        "statusFilter": {
+          "ko": "상태",
+          "ja": "ステータス",
+          "en": "Status"
+        },
+        "id": {
+          "ko": "ID",
+          "ja": "アカウント",
+          "en": "ID"
+        },
+        "manager": {
+          "ko": "담당자",
+          "ja": "担当者",
+          "en": "Assignee"
+        }
+      },
+      "column": {
+        "incomingType": {
+          "ko": "인입 유형",
+          "ja": "お問い合わせの経緯",
+          "en": "Inquiry Source"
+        },
+        "chatTitle": {
+          "ko": "제목",
+          "ja": "タイトル",
+          "en": "Title"
+        },
+        "status": {
+          "ko": "상태",
+          "ja": "ステータス",
+          "en": "Status"
+        },
+        "chatDate": {
+          "ko": "최초 대화 시작 시간",
+          "ja": "問い合わせ日時",
+          "en": "Chat Start Date"
+        },
+        "id": {
+          "ko": "아이디",
+          "ja": "アカウント",
+          "en": "ID"
+        },
+        "name": {
+          "ko": "이름",
+          "ja": "氏名",
+          "en": "Name"
+        },
+        "rating": {
+          "ko": "평가",
+          "ja": "評価",
+          "en": "Rating"
+        },
+        "manager": {
+          "ko": "담당자",
+          "ja": "担当者",
+          "en": "Assignee"
+        }
+      },
+      "incomingList": {
+        "none": {
+          "ko": "없음",
+          "ja": "なし",
+          "en": "None"
+        },
+        "chat": {"ko": "채팅", "ja": "チャット", "en": "Chat"},
+        "mail": {
+          "ko": "메일",
+          "ja": "メール",
+          "en": "Email"
+        }
+      }
+    },
+    "historyDetail": {
+      "sessionKey": {
+        "ko": "세션 키",
+        "ja": "セッションキー",
+        "en": "Session Key"
+      },
+      "id": {
+        "ko": "아이디",
+        "ja": "アカウント",
+        "en": "ID"
+      },
+      "rating": {
+        "ko": "평점",
+        "ja": "評価",
+        "en": "Rating"
+      },
+      "averageRating": {
+        "ko": "평균 평점",
+        "ja": "評価の平均",
+        "en": "Average Rating"
+      },
+      "reference": {
+        "ko": "문의 및 레퍼런스",
+        "ja": "問い合わせとリファレンス",
+        "en": "Inquiries & References"
+      },
+      "seeAll": {
+        "ko": "전체 보기",
+        "ja": "全体を見る",
+        "en": "View All"
+      },
+      "noManager": {
+        "ko": "없음",
+        "ja": "なし",
+        "en": "None"
+      },
+      "chat": {"ko": "채팅", "ja": "チャット", "en": "Chat"}
+    },
+    "referenceList": {
+      "search": {
+        "category": {
+          "ko": "카테고리",
+          "ja": "カテゴリ",
+          "en": "Category"
+        },
+        "title": {
+          "ko": "글제목",
+          "ja": "タイトル",
+          "en": "Title"
+        },
+        "isReference": {
+          "ko": "참조 여부",
+          "ja": "参照",
+          "en": "Reference"
+        },
+        "createdDate": {
+          "ko": "작성 일자",
+          "ja": "作成日",
+          "en": "Created Date"
+        },
+        "author": {
+          "ko": "작성자",
+          "ja": "作成者",
+          "en": "Created by"
+        }
+      },
+      "selectDelete": {
+        "ko": "선택 삭제",
+        "ja": "削除",
+        "en": "Delete Selected"
+      },
+      "goWriting": {
+        "ko": "글쓰기",
+        "ja": "作成",
+        "en": "New Post"
+      },
+      "column": {
+        "category": {
+          "ko": "카테고리",
+          "ja": "カテゴリー",
+          "en": "Category"
+        },
+        "title": {
+          "ko": "글 제목",
+          "ja": "タイトル",
+          "en": "Title"
+        },
+        "isReference": {
+          "ko": "참조 여부",
+          "ja": "参照",
+          "en": "Reference"
+        },
+        "createdDate": {
+          "ko": "작성 일시",
+          "ja": "作成日時",
+          "en": "Created Date"
+        },
+        "author": {
+          "ko": "작성자",
+          "ja": "作成者",
+          "en": "Created by"
+        },
+        "citationCount": {
+          "ko": "인용 횟수",
+          "ja": "引用回数",
+          "en": "Citations"
+        }
+      }
+    },
+    "referenceDetail": {
+      "title": {
+        "ko": "제목",
+        "ja": "タイトル",
+        "en": "Title"
+      },
+      "content": {
+        "ko": "내용",
+        "ja": "内容",
+        "en": "Content"
+      }
+    },
+    "writing": {
+      "fileUpload": {
+        "ko": "파일 첨부",
+        "ja": "添付ファイル",
+        "en": "Attach File"
+      },
+      "fileRegister": {
+        "ko": "파일 등록",
+        "ja": "ファイルを選択",
+        "en": "Upload File"
+      },
+      "usedToken": {
+        "ko": "사용한 토큰",
+        "ja": "トークンした数：",
+        "en": "Used Tokens"
+      }
+    },
+    "referenceCategory": {
+      "depth": {
+        "depth1": {
+          "ko": "대분류",
+          "ja": "大分類",
+          "en": "Primary"
+        },
+        "depth2": {
+          "ko": "중분류",
+          "ja": "中分類",
+          "en": "Secondary"
+        },
+        "depth3": {
+          "ko": "소분류",
+          "ja": "小分類",
+          "en": "Tertiary"
+        }
+      },
+      "noData": {
+        "ko": "{depth}가 존재하지 않습니다.",
+        "ja": "{depth}が存在しません。",
+        "en": "{depth} does not exist."
+      },
+      "inputCategoryName": {
+        "ko": "카테고리명을 입력하세요.",
+        "ja": "カテゴリ-名を入力してください",
+        "en": "Enter category name."
+      }
+    },
+    "members": {
+      "invite": {
+        "index": {
+          "ko": "초대",
+          "ja": "招待",
+          "en": "Invite"
+        },
+        "desc1": {
+          "ko": "*쉼표로 구분하여 복수의 사용자를 초대할 수 있습니다.",
+          "ja": "※半角カンマ(,)で区切ると、複数のユーザーを招待できます。",
+          "en": "*Separate multiple email addresses with commas to invite multiple users."
+        },
+        "desc2": {
+          "ko": "*초기 등급은 모두 Viewer로 추후 사용자 관리에서 수정 가능합니다.",
+          "ja": "※初期権限はViewerです。権限は、ユーザー管理ページから変更できます。",
+          "en": "*All users will be added as Viewers by default. You can change roles in the Users tab.",
+          "comment": "250825 수정"
+        },
+        "desc3": {
+          "ko": "*초대 링크는 전송 직후부터 48시간만 유효합니다.",
+          "ja": "※招待リンクは、招待メール送信後、48時間のみ有効です。",
+          "en": "*The invitation link is valid for 48 hours after it is first opened."
+        }
+      },
+      "search": {
+        "id": {
+          "ko": "ID",
+          "ja": "アカウント",
+          "en": "ID"
+        },
+        "department": {
+          "ko": "부서",
+          "ja": "所属部署/チーム",
+          "en": "Department"
+        },
+        "status": {
+          "ko": "상태",
+          "ja": "ステータス",
+          "en": "Status"
+        },
+        "date": {
+          "ko": "최초 가입/초대 일자",
+          "ja": "初回招待/登録日",
+          "en": "Join/Invite Date"
+        },
+        "email": {
+          "ko": "이메일",
+          "ja": "メールアドレス",
+          "en": "Email"
+        },
+        "authority": {
+          "ko": "권한",
+          "ja": "権限",
+          "en": "Role"
+        }
+      },
+      "column": {
+        "status": {
+          "ko": "상태",
+          "ja": "ステータス",
+          "en": "Status"
+        },
+        "authority": {
+          "ko": "권한",
+          "ja": "権限",
+          "en": "Role"
+        },
+        "department": {
+          "ko": "부서",
+          "ja": "所属部署/チーム",
+          "en": "Department"
+        },
+        "date": {
+          "ko": "최초 가입/초대 일자",
+          "ja": "初回招待/登録日",
+          "en": "Join/Invite Date"
+        },
+        "id": {
+          "ko": "아이디",
+          "ja": "アカウント",
+          "en": "ID"
+        },
+        "email": {
+          "ko": "이메일",
+          "ja": "メールアドレス",
+          "en": "Email"
+        },
+        "withdrawal": {
+          "ko": "탈퇴",
+          "ja": "退会",
+          "en": "Remove"
+        },
+        "resend": {
+          "ko": "재전송",
+          "ja": "再送信",
+          "en": "Resend"
+        },
+        "withdrawalOrResend": {
+          "ko": "탈퇴/재전송",
+          "ja": "退会/再送信",
+          "en": "Remove / Resend"
+        }
+      },
+      "modal": {
+        "status": {
+          "title": {
+            "ko": "가입 절차에 따른 상태는 아래와 같습니다.",
+            "ja": "登録ステータスについて",
+            "en": "Registration Status Guide"
+          },
+          "waiting": {
+            "ko": "가입 대기 : 초대 메일은 발송 성공했으나 아직 가입하지 않음.",
+            "ja": "登録待ち：招待メールは送信されましたが、<br>まだ登録が完了していません。",
+            "en": "Pending: Invitation sent, not yet registered."
+          },
+          "complete": {
+            "ko": "가입 완료 : 가입 완료한 상태이며 Master가 탈퇴 처리 가능.",
+            "ja": "登録完了：登録が完了し、Masterが退会処理を行う<br>ことができます。",
+            "en": "Joined: Registration complete. Master can remove user."
+          },
+          "expired": {
+            "ko": "초대 만료 : 초대 메일은 발송 성공했으나 초대 링크 만료됨. Master가 메일 재발송 가능.",
+            "ja": "招待期限切れ：招待メールは送信されましたが、<br>招待リンクが期限切れです。Masterが招待メールを<br>再送信できます。",
+            "en": "Expired: Invitation sent, but link expired. Master can resend."
+          },
+          "false": {
+            "ko": "초대 실패 : 초대 메일 발송 실패함.",
+            "ja": "招待失敗：招待メールの送信に失敗しました。",
+            "en": "Failed: Invitation email failed to send."
+          }
+        },
+        "authority": {
+          "title": {
+            "ko": "사용자 별로 아래와 같이 <br>권한이 부여됩니다.",
+            "ja": "ユーザー権限について",
+            "en": "Permissions are granted <br>by user role as follows:"
+          },
+          "master": {
+            "ko": "Master : 팀원/플랜 관리를 포함한 모든 기능 사용 가능",
+            "ja": "Master：社員/プラン管理を含む<br>すべての機能に利用可能",
+            "en": "Master : Full access incl. members & plans",
+            "comment": "250926 수정"
+          },
+          "manager": {
+            "ko": "Manager : 팀원/플랜 관리를 제외한 모든 기능 사용 가능",
+            "ja": "Manager：社員/プラン管理を除く<br>すべての機能に利用可能",
+            "en": "Manager : All access except members & plans",
+            "comment": "250926 수정"
+          },
+          "viewer": {
+            "ko": "Viewer : AI 질의, 이메일 확인/발송만 사용 가능",
+            "ja": "Viewer：AI質問とメールの確認／<br>送信のみ利用可能",
+            "en": "Viewer : AI queries and email view/send only",
+            "comment": "250929 수정"
+          },
+          "desc": {
+            "ko": "권한 변경을 원하시면 Master에게 요청 바랍니다.",
+            "ja": "権限変更をご希望の場合は、<br>Master管理者にリクエストしてください。",
+            "en": "For permission changes, contact your Master."
+          }
+        }
+      },
+      "status": {
+        "all": {
+          "ko": "전체",
+          "ja": "すべて",
+          "en": "All"
+        },
+        "waiting": {
+          "ko": "가입 대기",
+          "ja": "登録待ち",
+          "en": "Pending"
+        },
+        "complete": {
+          "ko": "가입 완료",
+          "ja": "登録完了",
+          "en": "Joined"
+        },
+        "expired": {
+          "ko": "초대 만료",
+          "ja": "招待期限切れ",
+          "en": "Expired"
+        },
+        "false": {
+          "ko": "초대 실패",
+          "ja": "招待失敗",
+          "en": "Failed"
+        }
+      }
+    },
+    "plan": {
+      "usingPlan": {
+        "ko": "이용중인 플랜",
+        "ja": "ご利用中のプラン",
+        "en": "Plan in Use"
+      },
+      "planChange": {
+        "ko": "플랜 변경",
+        "ja": "プラン編集",
+        "en": "Change Plan"
+      },
+      "planCancel": {
+        "ko": "플랜 해지",
+        "ja": "プラン解約",
+        "en": "Cancle Plan"
+      },
+      "planUsageStatus": {
+        "ko": "플랜 사용 현황",
+        "ja": "プランの利用状況",
+        "en": "Plan Usage"
+      },
+      "remainingQuestion": {
+        "ko": "잔여 질문",
+        "ja": "残余質問",
+        "en": "Questions Left"
+      },
+      "questionCount": {
+        "ko": "건",
+        "ja": "件",
+        "en": ""
+      },
+      "usePeriod": {
+        "ko": "이용 기간",
+        "ja": "利用期間",
+        "en": "Usage Period"
+      },
+      "nextPlan": {
+        "title": {
+          "ko": "다음 플랜",
+          "ja": "次回のプラン",
+          "en": "Next Plan"
+        },
+        "desc": {
+          "ko": "{date}에 {plan} 플랜이 시작됩니다.",
+          "ja": "{date}に {plan} プランが利用開始予定です。",
+          "en": "Your next {plan} starts on {date}."
+        },
+        "nonPlan": {
+          "ko": "다음 플랜이 존재하지 않습니다.",
+          "ja": "次回のプランがありません。",
+          "en": "You have no upcoming plan."
+        }
+      },
+      "none": {
+        "ko": "없음",
+        "ja": "なし",
+        "en": "No Plan in Use"
+      },
+      "column": {
+        "planName": {
+          "ko": "플랜명",
+          "ja": "プラン名",
+          "en": "Plan"
+        },
+        "usePeriod": {
+          "ko": "이용 기간",
+          "ja": "利用期間",
+          "en": "Usage Period"
+        },
+        "questionCount": {
+          "ko": "제공 질문",
+          "ja": "提供する質問",
+          "en": "Provided Questions"
+        },
+        "useQuestionCount": {
+          "ko": "사용 질문",
+          "ja": "使用済みの質問",
+          "en": "Used Questions"
+        },
+        "paymentMethod": {
+          "ko": "결제 수단",
+          "ja": "決済方法",
+          "en": "Payment Method"
+        },
+        "paymentAmount": {
+          "ko": "결제 금액",
+          "ja": "決済する金額",
+          "en": "Total (KRW)"
+        }
+      },
+      "subscribe": {
+        "title": {
+          "ko": "플랜 신청 및 변경",
+          "ja": "プラン申請および変更",
+          "en": "Plan Application & Change"
+        },
+        "plan": {
+          "basic": {
+            "questionCount": {
+              "ko": "3,000건/월",
+              "ja": "3,000件/月",
+              "en": "3,000/month"
+            },
+            "price": {
+              "ko": "100만원/월(VAT 별도)",
+              "ja": "100万円/月(税抜)",
+              "en": "₩100/month(excl. VAT)"
+            }
+          },
+          "premium": {
+            "questionCount": {
+              "ko": "10,000건/월",
+              "ja": "10,000件/月",
+              "en": "10,000/month"
+            },
+            "price": {
+              "ko": "300만원/월(VAT 별도)",
+              "ja": "300万円/月(税抜)",
+              "en": "₩300/month(excl. VAT)"
+            }
+          },
+          "pro": {
+            "questionCount": {
+              "ko": "100,000건/월",
+              "ja": "100,000件/月",
+              "en": "100,000/month"
+            },
+            "price": {
+              "ko": "1,000만원/월(VAT 별도)",
+              "ja": "1,000万円/月(税抜)",
+              "en": "₩1,000/month(excl. VAT)"
+            }
+          }
+        },
+        "desc": [
+          {
+            "ko": "Master가 구매한 플랜의 질문 건수는 팀원들과 공유하여 사용합니다.",
+            "ja": "Masterが購入したプランの質問件数は、チームメンバーと共有し、ご利用いただけます。",
+            "en": "Inquiries purchased by the Master account are shared and used by all team members."
+          },
+          {
+            "ko": "매월 잔여 질문은 이관 되지 않습니다.",
+            "ja": "毎月の残余質問は、繰越されません。 ",
+            "en": "Unused inquiries do not carry over to the next month."
+          },
+          {
+            "ko": "플랜 업그레이드 : 즉시 플랜 변경되며, 결제 금액은 잔여 질문만큼 산정하여 차감됩니다.",
+            "ja": "プランのアップグレード : プランがすぐ反映され、決済する金額が残りの質問数を算定し、金額が割引されます。",
+            "en": "Plan Upgrade: The plan will be changed immediately. The amount charged will be calculated based on the remaining inquiry balance."
+          },
+          {
+            "ko": "플랜 다운그레이드 : 다음 플랜 시작일에 플랜이 변경됩니다.",
+            "ja": "プランのダウングレード : 次回のプラン開始日にプランが適用されます。",
+            "en": "Plan Downgrade: The plan will be changed on the next billing cycle."
+          },
+          {
+            "ko": "무통장 결제로 진행되며, 아래 정보 기입 및 첨부하여 <br> {email}으로 문의 바랍니다.",
+            "ja": "下記の情報をご記入及び添付の上、<br> {email}へお問い合わせください.",
+            "en": "For wire transfer payments, please send the following information and attachments to: {email}"
+          }
+        ],
+        "info": {
+          "id": {
+            "ko": "계정아이디",
+            "ja": "アカウント",
+            "en": "Account ID"
+          },
+          "company": {
+            "ko": "회사명",
+            "ja": "会社名",
+            "en": "Company name"
+          },
+          "desiredPlan": {
+            "ko": "원하시는 플랜",
+            "ja": "ご希望のプラン",
+            "en": "Preferred plan"
+          },
+          "invoiceEmail": {
+            "ko": "세금계산서 발행 이메일",
+            "ja": "請求書を送付するメールアドレス",
+            "en": "Email address for tax invoice"
+          },
+          "invoiceDate": {
+            "ko": "세금계산서 발행 일",
+            "ja": "請求書発行日",
+            "en": "Date of tax invoice issuance"
+          },
+          "expectedPaymentDate": {
+            "ko": "입금 예정일",
+            "ja": "入金予定日",
+            "en": "Expected deposit date"
+          },
+          "businessRegistrationNumber": {
+            "ko": "사업자 등록증",
+            "ja": "法人番号",
+            "en": "Business registration certificate"
+          }
+        }
+      },
+      "nonRemainQuestion": {
+        "title": {
+          "ko": "잔여 질문이 없습니다.",
+          "en": "No remaining questions available.",
+          "ja": "残余質問がありません。"
+        },
+        "desc": {
+          "ko": "플랜을 업그레이드하시거나 <br>충전하시기 바랍니다.",
+          "en": "Upgrade or recharge your plan.",
+          "ja": "プランをアップグレードもしくは<br>チャージしてください。"
+        },
+        "contact": {
+          "ko": "문의: {email}",
+          "en": "Contact: {email}",
+          "ja": "お問い合わせ先: {email}"
+        }
+      }
+    },
+    "drive": {
+      "search": {
+        "name": {
+          "ko": "파일명",
+          "ja": "ファイル名",
+          "en": "File Name"
+        },
+        "createdDate": {
+          "ko": "업로드 일자",
+          "ja": "アップロード日",
+          "en": "Upload Date"
+        }
+      },
+      "upload": {
+        "ko": "파일 등록",
+        "ja": "ファイルを選択",
+        "en": "Upload File"
+      },
+      "column": {
+        "fileName": {
+          "ko": "파일명",
+          "ja": "ファイル名",
+          "en": "File Name"
+        },
+        "fileType": {
+          "ko": "파일 확장자",
+          "ja": "ファイル拡張子",
+          "en": "File Extension"
+        },
+        "fileSize": {
+          "ko": "파일 크기",
+          "ja": "ファイルサイズ",
+          "en": "File Size"
+        },
+        "status": {
+          "ko": "상태",
+          "ja": "ステータス",
+          "en": "Status"
+        },
+        "regDate": {
+          "ko": "업로드 일시",
+          "ja": "アップロード日",
+          "en": "Upload Date"
+        }
+      },
+      "status": {
+        "pending": {
+          "ko": "업로드 중",
+          "ja": "アップロード",
+          "en": "Pending"
+        },
+        "success": {
+          "ko": "업로드 성공",
+          "ja": "成功",
+          "en": "Upload complete"
+        },
+        "analyzing": {
+          "ko": "분석 중",
+          "ja": "パージング",
+          "en": "Analyzing"
+        },
+        "finished": {
+          "ko": "분석 완료",
+          "ja": "解析済み",
+          "en": "Analysis Complete"
+        },
+        "unparsed": {
+          "ko": "분석 실패",
+          "ja": "未解析",
+          "en": "Analysis Failed"
+        },
+        "failed": {
+          "ko": "실패",
+          "ja": "失敗",
+          "en": "Failed"
+        }
+      },
+      "title": {
+        "ko": "파일 저장소",
+        "en": "File Storage",
+        "ja": "ファイルストレージ"
+      },
+      "root": {
+        "ko": "전체 파일",
+        "en": "All files",
+        "ja": "すべてのファイル"
+      },
+      "newFolder": {
+        "ko": "새 폴더",
+        "en": "New folder",
+        "ja": "新しいフォルダー"
+      },
+      "folderName": {
+        "ko": "폴더 이름",
+        "en": "Folder name",
+        "ja": "フォルダー名"
+      },
+      "rename": {
+        "ko": "이름 변경",
+        "en": "Rename",
+        "ja": "名前の変更"
+      },
+      "newName": {
+        "ko": "새 이름",
+        "en": "New name",
+        "ja": "新しい名前"
+      },
+      "delete": {
+        "ko": "삭제",
+        "en": "Delete",
+        "ja": "削除"
+      },
+      "download": {
+        "ko": "다운로드",
+        "en": "Download",
+        "ja": "ダウンロード"
+      },
+      "detail": {
+        "ko": "상세 보기",
+        "en": "Open",
+        "ja": "詳細を見る"
+      },
+      "retry": {
+        "ko": "분석 다시 시도",
+        "en": "Retry analysis",
+        "ja": "再解析"
+      },
+      "dropHint": {
+        "ko": "PDF 파일을 여기에 끌어다 놓으면 현재 폴더에 업로드됩니다 (파일당 50MB)",
+        "en": "Drop PDF files here to upload into this folder (50MB per file)",
+        "ja": "PDFをここにドロップすると現在のフォルダーにアップロードされます (1ファイル50MBまで)"
+      },
+      "dropToMove": {
+        "ko": "여기로 이동",
+        "en": "Move here",
+        "ja": "ここに移動"
+      },
+      "emptyFolder": {
+        "ko": "이 폴더는 비어 있습니다",
+        "en": "This folder is empty",
+        "ja": "このフォルダーは空です"
+      },
+      "folders": {
+        "ko": "폴더",
+        "en": "Folders",
+        "ja": "フォルダー"
+      },
+      "files": {
+        "ko": "파일",
+        "en": "Files",
+        "ja": "ファイル"
+      },
+      "selected": {
+        "ko": "{n}개 선택",
+        "en": "{n} selected",
+        "ja": "{n}件選択"
+      },
+      "confirmDelete": {
+        "ko": "선택한 항목을 삭제할까요? 폴더는 안의 파일과 함께 삭제됩니다.",
+        "en": "Delete the selected items? Folders are deleted with their files.",
+        "ja": "選択した項目を削除しますか？フォルダーは中のファイルごと削除されます。"
+      },
+      "confirmDeleteOne": {
+        "ko": "'{name}' 을(를) 삭제할까요?",
+        "en": "Delete '{name}'?",
+        "ja": "'{name}' を削除しますか？"
+      },
+      "viewGrid": {
+        "ko": "아이콘 보기",
+        "en": "Grid view",
+        "ja": "アイコン表示"
+      },
+      "viewList": {
+        "ko": "목록 보기",
+        "en": "List view",
+        "ja": "リスト表示"
+      },
+      "searchPlaceholder": {
+        "ko": "파일 이름 검색",
+        "en": "Search file name",
+        "ja": "ファイル名を検索"
+      },
+      "uploadHint": {
+        "ko": "PDF만 업로드할 수 있습니다",
+        "en": "Only PDF files can be uploaded",
+        "ja": "PDFのみアップロードできます"
+      },
+      "moveFailed": {
+        "ko": "이동할 수 없습니다",
+        "en": "Cannot move here",
+        "ja": "ここには移動できません"
+      },
+      "creditLeft": {
+        "ko": "남은 분석 크레딧: {n}",
+        "en": "Analysis credit left: {n}",
+        "ja": "残り解析クレジット: {n}"
+      }
+    },
+    "penpal": {
+      "comingSoon": {
+        "ko": "Open 예정",
+        "en": "Coming Soon!",
+        "ja": "Open予定"
+      },
+      "detail": {
+        "count": {
+          "ko": "개",
+          "en": "",
+          "ja": "つ"
+        },
+        "noneManager": {
+          "ko": "미할당",
+          "en": "Unassigned",
+          "ja": "担当者不在"
+        },
+        "receivedDate": {
+          "ko": "수신 일시",
+          "ja": "受信時間",
+          "en": "Received Date"
+        },
+        "attachments": {
+          "ko": "첨부파일",
+          "ja": "添付ファイル",
+          "en": "Attachments"
+        },
+        "cc": {
+          "ko": "참조",
+          "ja": "CC",
+          "en": "CC"
+        },
+        "keyword": {
+          "ko": "키워드",
+          "en": "Keyword",
+          "ja": "キーワード"
+        },
+        "answer": {
+          "ko": "답변",
+          "en": "Reply",
+          "ja": "返信"
+        },
+        "template": {
+          "ko": "템플릿",
+          "en": "Template",
+          "ja": "テンプレート"
+        },
+        "hiddenCc": {
+          "ko": "숨은 참조",
+          "en": "BCC",
+          "ja": "BCC"
+        },
+        "inTemplateitial": {
+          "ko": "답변을 생성해주세요.",
+          "en": "Please create a reply.",
+          "ja": "AIで返信を作成してください。"
+        },
+        "create": {
+          "ko": "답변 생성",
+          "en": "Create Reply",
+          "ja": "AIで返信"
+        },
+        "answerEdit": {
+          "ko": "답변 수정",
+          "en": "Edit Reply",
+          "ja": "返信を編集"
+        },
+        "send": {
+          "ko": "보내기",
+          "en": "Send",
+          "ja": "返信する"
+        },
+        "reply": {
+          "ko": "답장하기",
+          "en": "Reply",
+          "ja": "返信する"
+        },
+        "mailInfoId": {
+          "ko": "mail info ID &#124;",
+          "en": "mail info ID &#124;",
+          "ja": "mail info ID &#124;"
+        },
+        "mailId": {
+          "ko": "mail ID &#124;",
+          "en": "mail ID &#124;",
+          "ja": "mail ID &#124;"
+        },
+        "referenceId": {
+          "ko": "연결된 mail ID &#124;",
+          "en": "Related mail ID &#124;",
+          "ja": "関連mail ID &#124;"
+        },
+        "comment": {
+          "ko": "코멘트",
+          "en": "Comment",
+          "ja": "コメント"
+        },
+        "requiredComment": {
+          "ko": "코멘트는 필수입니다.",
+          "en": "Comment is required.",
+          "ja": "コメントは必須です。"
+        },
+        "sendConfirm": {
+          "ko": "정말로 발송하시겠습니까?",
+          "en": "Are you sure you want to send?",
+          "ja": "送信してもよろしいでしょうか？"
+        },
+        "sendSuccess": {
+          "ko": "발송이 완료되었습니다.",
+          "en": "Your message has been sent.",
+          "ja": "送信が完了しました。"
+        },
+        "toMail": {
+          "ko": "수신인: {email}",
+          "en": "Recipient: {email}",
+          "ja": "受取人: {email}"
+        },
+        "allSave": {
+          "ko": "모두 저장",
+          "en": "Save All",
+          "ja": "全て保存"
+        },
+        "receivedType": {
+          "ko": "수신 타입",
+          "en": "Recipient Type",
+          "ja": "受信タイプ"
+        },
+        "out": {
+          "ko": "나가기",
+          "en": "Exit",
+          "ja": "閉じる"
+        },
+        "top": {
+          "ko": "맨 위로",
+          "en": "Back to Top",
+          "ja": "トップ"
+        },
+        "from": {
+          "ko": "보내는 사람",
+          "en": "Sender",
+          "ja": "差出人"
+        },
+        "temporarySave": {
+          "ko": "임시 저장",
+          "en": "Save Draft",
+          "ja": "一時保存"
+        },
+        "editComment": {
+          "ko": "수정 코멘트",
+          "en": "Edit Comment",
+          "ja": "編集コメント"
+        },
+        "ccInfo": {
+          "ko": "참조 정보",
+          "en": "CC",
+          "ja": "CC"
+        },
+        "allDelete": {
+          "ko": "모두 삭제",
+          "en": "Delete All",
+          "ja": "全て削除"
+        },
+        "replyIn": {
+          "ko": "({hour}h 후 회신)",
+          "en": "(Reply in {hour}h)",
+          "ja": "({hour}h後返信)"
+        },
+        "whetherSendBack": {
+          "ko": "반송 여부",
+          "en": "Bounce",
+          "ja": "バウンス",
+          "comment": "2025-10-16 다국어 필요"
+        },
+        "whetherSent": {
+          "ko": "발송 여부",
+          "en": "Send status",
+          "ja": "送信結果",
+          "comment": "2025-10-16 다국어 필요"
+        },
+        "success": {
+          "ko": "성공",
+          "en": "Sent",
+          "ja": "成功",
+          "comment": "2025-10-16 다국어 필요"
+        },
+        "failed": {
+          "ko": "실패",
+          "ja": "失敗",
+          "en": "Failed"
+        },
+        "yes": {
+          "ko": "예",
+          "en": "Yes",
+          "ja": "예",
+          "comment": "2025-10-16 다국어 필요"
+        },
+        "notApplicable": {
+          "ko": "해당 없음",
+          "en": "None",
+          "ja": "なし"
+        }
+      },
+      "column": {
+        "kind": {
+          "ko": "유형",
+          "ja": "タイプ",
+          "en": "Type"
+        },
+        "subject": {
+          "ko": "제목",
+          "ja": "タイトル",
+          "en": "Title"
+        },
+        "status": {
+          "ko": "상태",
+          "ja": "ステータス",
+          "en": "Status"
+        },
+        "receivedAt": {
+          "ko": "수신 일시",
+          "ja": "受信時間",
+          "en": "Received Date"
+        },
+        "fromMail": {
+          "ko": "보낸 사람",
+          "ja": "差出人",
+          "en": "Sender"
+        },
+        "toMail": {
+          "ko": "받는 사람",
+          "ja": "受取人",
+          "en": "Recipient"
+        },
+        "company": {
+          "ko": "소속",
+          "ja": "企業名・所属",
+          "en": "Department"
+        },
+        "manager": {
+          "ko": "담당자",
+          "ja": "担当者",
+          "en": "Assignee"
+        },
+        "sentAt": {
+          "ko": "발신 일시",
+          "ja": "送信時間",
+          "en": "Sent Date"
+        }
+      },
+      "search": {
+        "receivedDate": {
+          "ko": "기간",
+          "ja": "期間",
+          "en": "Date range"
+        },
+        "content": {
+          "ko": "내용",
+          "ja": "内容",
+          "en": "Content"
+        },
+        "status": {
+          "ko": "상태",
+          "ja": "ステータス",
+          "en": "Status"
+        },
+        "sender": {
+          "ko": "보낸 사람",
+          "ja": "差出人",
+          "en": "Sender"
+        },
+        "subject": {
+          "ko": "제목",
+          "ja": "タイトル",
+          "en": "Title"
+        },
+        "to": {
+          "ko": "받는 사람",
+          "ja": "受取人",
+          "en": "Recipient"
+        }
+      },
+      "statusList": {
+        "all": {
+          "ko": "전체",
+          "ja": "すべて",
+          "en": "All"
+        },
+        "parsed": {
+          "ko": "대기",
+          "ja": "待機",
+          "en": "Pending"
+        },
+        "spam": {
+          "ko": "스팸",
+          "ja": "スパム",
+          "en": "SPAM"
+        },
+        "answering": {
+          "ko": "처리 중",
+          "ja": "処理中",
+          "en": "In Progress"
+        },
+        "sent": {
+          "ko": "답변 완료",
+          "ja": "返信完了",
+          "en": "Answered"
+        },
+        "close": {
+          "ko": "닫힘",
+          "ja": "閉じる",
+          "en": "Closed"
+        }
+      },
+      "dashboard": {
+        "workStatus": {
+          "title": {
+            "ko": "업무 처리 현황",
+            "en": "Operations Status",
+            "ja": "業務処理状況"
+          },
+          "received": {
+            "ko": "기간 내 수신 메일 총 {count}건",
+            "en": "Total received emails in period: {count}",
+            "ja": "期間内の受信メール 合計{count}件"
+          },
+          "pending": {
+            "ko": "기간 내 대기 상태 메일 총 {count}건",
+            "en": "Total pending emails in period: {count}",
+            "ja": "期間内の待機メール 合計{count}件"
+          },
+          "inProgress": {
+            "ko": "기간 내 처리 중 상태 메일 총 {count}건",
+            "en": "Total in-progress emails in period: {count}",
+            "ja": "期間内の処理中メール 合計{count}件"
+          },
+          "delayDay": {
+            "ko": "일 지연",
+            "en": "Days delayed",
+            "ja": "遅延日数"
+          },
+          "delayDayCount": {
+            "ko": "지연일수",
+            "en": "Days Delayed",
+            "ja": "遅延日数"
+          },
+          "dayCount": {
+            "ko": "0일(오늘 수신)",
+            "en": "0 days<br>(received today)",
+            "ja": "0日（本日受信）"
+          },
+          "noneReceived": {
+            "ko": "해당 기간에 <br> 수신받은 메일이 없습니다.",
+            "en": "No emails received <br> in this period.",
+            "ja": "期間内に <br> 受信メールはありません。"
+          },
+          "nonePending": {
+            "ko": "해당 기간에 <br> 대기 중인 메일이 없습니다.",
+            "en": "No emails pending <br> in this period.",
+            "ja": "期間内に <br> 待機中のメールはありません。"
+          },
+          "noneInProgress": {
+            "ko": "해당 기간에 <br> 처리 중인 메일이 없습니다.",
+            "en": "No emails in progress <br> in this period.",
+            "ja": "期間内に <br> 処理中のメールはありません。"
+          }
+        },
+        "sentCount": {
+          "title": {
+            "ko": "일별 수/발신 건수",
+            "en": "Daily received & replies sent",
+            "ja": "日別 受信／返信送信 件数"
+          },
+          "received": {
+            "ko": "수신",
+            "en": "Received",
+            "ja": "受信"
+          },
+          "sentReply": {
+            "ko": "답변 발송",
+            "en": "Replies sent",
+            "ja": "返信送信"
+          },
+          "byShipmentDate": {
+            "ko": "(발송일 기준 집계)",
+            "en": "(counted by send date)",
+            "ja": "(送信日基準で集計)"
+          },
+          "annotation": {
+            "ko": "※ 스팸 메일은 카운트 제외",
+            "en": "* Spam emails are excluded from counts.",
+            "ja": "※ 迷惑メールは件数に含みません。"
+          }
+        },
+        "managerAssignmentRatio": {
+          "title": {
+            "ko": "담당자 할당 비율",
+            "en": "Assignee allocation",
+            "ja": "担当者別割当率"
+          },
+          "other": {
+            "ko": "기타",
+            "en": "Others",
+            "ja": "その他"
+          }
+        }
+      }
+    },
+    "chatBot": {
+      "subHeader": {
+        "ko": "AI 어시스턴트 서비스에 대해 물어보세요!",
+        "ja": "AIアシスタントサービスに関して、質問してみてください！",
+        "en": "Ask me anything about the the assistant service!"
+      },
+      "greetingMsg": {
+        "ko": "안녕하세요! 저는 AI 어시스턴트의 레퍼런스를 학습한 AI입니다.<br>서비스 이용 방법부터 세부 기능까지, AI 어시스턴트의 스마트한 질의응답 기능을 지금 바로 경험해 보실 수 있어요!",
+        "ja": "こんにちは！私はAIアシスタントのReferencesを学習したAIです。<br>サービスの利用方法から詳細機能まで、AIアシスタントの質疑応答チャット機能を、 お試しください！",
+        "en": "Hello! I’m an AI trained on the assistant’s reference materials.<br>From how to use the service to its detailed features, you can now experience the assistant’s smart Q&A assistant in action!"
+      },
+      "listTitle": {
+        "ko": "이런 질문은 어때요?",
+        "ja": "こんな質問はいかがですか？",
+        "en": "Not sure what to ask?"
+      },
+      "questionGuide": {
+        "ko": "질문 가이드",
+        "ja": "質問ガイド",
+        "en": "Question Guide"
+      },
+      "reset": {
+        "ko": "초기화",
+        "ja": "リセット",
+        "en": "Reset"
+      },
+      "questionList": {
+        "about": {
+          "label": {
+            "ko": "AI 어시스턴트는 어떤 서비스인가요?",
+            "ja": "AIアシスタントに関して知りたいです！",
+            "en": "Curious about the assistant?"
+          },
+          "list": [
+            {
+              "ko": "AI 어시스턴트는 어떤 서비스인가요?",
+              "ja": "AIアシスタントはどんなサービスですか？",
+              "en": "What kind of service is the assistant?"
+            },
+            {
+              "ko": "어떻게 가입하고 시작하나요?",
+              "ja": "会員登録方法と導入方法は？",
+              "en": "How do I sign up and get started?"
+            },
+            {
+              "ko": "무료로 써볼 수 있나요?",
+              "ja": "無料で使えますか？",
+              "en": "Can I try it for free?"
+            },
+            {
+              "ko": "요금제는 어떻게 구성되어 있나요?",
+              "ja": "料金プランを教えてください。",
+              "en": "How are the pricing plans structured?"
+            }
+          ]
+        },
+        "menu": {
+          "label": {
+            "ko": "각 메뉴가 궁금해요!",
+            "ja": "それぞれの機能を教えて欲しいです！",
+            "en": "Curious about each section?"
+          },
+          "list": [
+            {
+              "ko": "대화형 업무지원은 어떤 메뉴인가요?",
+              "ja": "チャットは、どんな機能ですか？",
+              "en": "What is the Work Chat section for?",
+              "comment": "250902수정"
+            },
+            {
+              "ko": "이메일 업무지원은 어떤 메뉴인가요?",
+              "ja": "メールサポートは、どんな機能ですか？",
+              "en": "What can I do in the Email Support section?",
+              "comment": "250902수정"
+            },
+            {
+              "ko": "참고자료는 어떤 메뉴인가요?",
+              "ja": "参考資料は、どんな機能ですか？",
+              "en": "What does the References section offer?",
+              "comment": "250902수정"
+            },
+            {
+              "ko": "시스템 관리는 어떤 메뉴인가요?",
+              "ja": "システム管理は、どんな機能ですか？",
+              "en": "What settings are available in the Admin section?",
+              "comment": "250902수정"
+            }
+          ]
+        }
+      }
+    },
+    "seo": {
+      "signin": {
+        "title": {
+          "ko": "Signin",
+          "ja": "ログイン",
+          "en": "Signin"
+        },
+        "desc": {
+          "ko": "AI 어시스턴트에 로그인하면, 흩어진 지식이 하나로 연결되고 실시간으로 대답하는 AI를 이용해 효율적인 일의 방식을 경험하실 수 있습니다.",
+          "ja": "AIアシスタントにログインすると、散財していたナレッジが一元化され、 リアルタイムでAIを活用し、効率的に業務に取り組めます。",
+          "en": "Log in to the assistant and experience a smarter way to work—where fragmented knowledge is unified and AI responds in real time."
+        }
+      },
+      "chat": {
+        "ko": "Chat - Dashboard",
+        "ja": "Chat - ダッシュボード",
+        "en": "Chat - Dashboard"
+      },
+      "playground": {
+        "ko": "Chat - Playground",
+        "ja": "Chat - Playground",
+        "en": "Chat - Playground"
+      },
+      "jeju": {
+        "ko": "제주도청 업무지원 챗봇",
+        "ja": "제주도청 업무지원 챗봇",
+        "en": "제주도청 업무지원 챗봇"
+      },
+      "prompt": {
+        "ko": "Chat - Prompt",
+        "ja": "Chat - プロンプト",
+        "en": "Chat - Prompt"
+      },
+      "mailPrompt": {
+        "ko": "Mail - Prompt",
+        "ja": "Mail - プロンプト",
+        "en": "Mail - Prompt"
+      },
+      "history": {
+        "ko": "Chat - History",
+        "ja": "Chat - 履歴",
+        "en": "Chat - History"
+      },
+      "aimail": {
+        "ko": "AI email assistant - Dashboard",
+        "ja": "AIメールアシスタント - ダッシュボード",
+        "en": "AI email assistant - Dashboard"
+      },
+      "aimailList": {
+        "ko": "AI email assistant - Inbox List",
+        "ja": "AIメールアシスタント - 受信トレイ",
+        "en": "AI email assistant - Inbox List"
+      },
+      "reference": {
+        "ko": "References - Board",
+        "ja": "References - Board",
+        "en": "References - Board"
+      },
+      "drive": {
+        "ko": "References - File Drive",
+        "ja": "References - File Drive",
+        "en": "References - File Drive"
+      },
+      "rag": {
+        "ko": "References - Email RAG",
+        "ja": "References - Email RAG",
+        "en": "References - Email RAG"
+      },
+      "setting": {
+        "ko": "References - Settings",
+        "ja": "References - 設定",
+        "en": "References - Settings"
+      },
+      "members": {
+        "ko": "Admin - Members",
+        "ja": "管理 - メンバー",
+        "en": "Admin - Members"
+      },
+      "plan": {
+        "ko": "Admin - Plan",
+        "ja": "管理- プラン",
+        "en": "Admin - Plan"
+      },
+      "mailReceive": {
+        "ko": "메일 수신 설정",
+        "en": "Mail Receiving",
+        "ja": "メール受信設定"
+      }
+    },
+    "mailReceive": {
+      "title": {
+        "ko": "메일 수신 설정",
+        "en": "Mail Receiving Settings",
+        "ja": "メール受信設定"
+      },
+      "desc": {
+        "ko": "받은편지함에 메일을 가져올 경로를 등록합니다. IMAP(메일 서버)과 SES(S3 수신 버킷) 중 필요한 것만 켜세요.",
+        "en": "Register where to pull inbox mail from. Enable IMAP (mail server) and/or SES (S3 inbound bucket).",
+        "ja": "受信トレイにメールを取り込む経路を登録します。IMAP(メールサーバー)とSES(S3受信バケット)のうち必要なものだけ有効にしてください。"
+      },
+      "imap": {
+        "ko": "IMAP 메일 서버",
+        "en": "IMAP Mail Server",
+        "ja": "IMAPメールサーバー"
+      },
+      "ses": {
+        "ko": "Amazon SES (S3 수신 버킷)",
+        "en": "Amazon SES (S3 inbound bucket)",
+        "ja": "Amazon SES (S3受信バケット)"
+      },
+      "active": {
+        "ko": "수집 사용",
+        "en": "Enabled",
+        "ja": "有効"
+      },
+      "interval": {
+        "ko": "수집 주기(초)",
+        "en": "Poll interval (sec)",
+        "ja": "取得間隔(秒)"
+      },
+      "host": {
+        "ko": "호스트",
+        "en": "Host",
+        "ja": "ホスト"
+      },
+      "port": {
+        "ko": "포트",
+        "en": "Port",
+        "ja": "ポート"
+      },
+      "ssl": {
+        "ko": "SSL 사용",
+        "en": "Use SSL",
+        "ja": "SSL使用"
+      },
+      "username": {
+        "ko": "계정",
+        "en": "Username",
+        "ja": "アカウント"
+      },
+      "password": {
+        "ko": "비밀번호",
+        "en": "Password",
+        "ja": "パスワード"
+      },
+      "passwordKeep": {
+        "ko": "비우면 저장된 비밀번호를 유지합니다",
+        "en": "Leave blank to keep the saved password",
+        "ja": "空欄の場合は保存済みのパスワードを維持します"
+      },
+      "folder": {
+        "ko": "폴더",
+        "en": "Folder",
+        "ja": "フォルダー"
+      },
+      "region": {
+        "ko": "리전",
+        "en": "Region",
+        "ja": "リージョン"
+      },
+      "bucket": {
+        "ko": "버킷",
+        "en": "Bucket",
+        "ja": "バケット"
+      },
+      "prefix": {
+        "ko": "프리픽스",
+        "en": "Prefix",
+        "ja": "プレフィックス"
+      },
+      "accessKey": {
+        "ko": "액세스 키",
+        "en": "Access key",
+        "ja": "アクセスキー"
+      },
+      "secretKey": {
+        "ko": "시크릿 키",
+        "en": "Secret key",
+        "ja": "シークレットキー"
+      },
+      "secretKeep": {
+        "ko": "비우면 저장된 시크릿 키를 유지합니다(미입력 시 인스턴스 권한 사용)",
+        "en": "Leave blank to keep the saved key (or use instance role)",
+        "ja": "空欄の場合は保存済みのキーを維持します(未入力時はインスタンス権限を使用)"
+      },
+      "test": {
+        "ko": "연결 테스트",
+        "en": "Test connection",
+        "ja": "接続テスト"
+      },
+      "save": {
+        "ko": "저장",
+        "en": "Save",
+        "ja": "保存"
+      },
+      "delete": {
+        "ko": "설정 삭제",
+        "en": "Delete",
+        "ja": "削除"
+      },
+      "runNow": {
+        "ko": "지금 수집",
+        "en": "Fetch now",
+        "ja": "今すぐ取得"
+      },
+      "lastPolled": {
+        "ko": "마지막 확인",
+        "en": "Last checked",
+        "ja": "最終確認"
+      },
+      "lastSuccess": {
+        "ko": "마지막 성공",
+        "en": "Last success",
+        "ja": "最終成功"
+      },
+      "received": {
+        "ko": "누적 수신",
+        "en": "Received total",
+        "ja": "累計受信"
+      },
+      "lastError": {
+        "ko": "마지막 오류",
+        "en": "Last error",
+        "ja": "最終エラー"
+      },
+      "notConfigured": {
+        "ko": "아직 등록되지 않았습니다",
+        "en": "Not configured yet",
+        "ja": "未登録です"
+      },
+      "testOk": {
+        "ko": "연결 성공",
+        "en": "Connection OK",
+        "ja": "接続成功"
+      },
+      "testFail": {
+        "ko": "연결 실패",
+        "en": "Connection failed",
+        "ja": "接続失敗"
+      },
+      "saved": {
+        "ko": "저장되었습니다",
+        "en": "Saved",
+        "ja": "保存しました"
+      },
+      "deleted": {
+        "ko": "삭제되었습니다",
+        "en": "Deleted",
+        "ja": "削除しました"
+      },
+      "fetched": {
+        "ko": "수집 완료: {n}건",
+        "en": "Fetched: {n}",
+        "ja": "取得完了: {n}件"
+      },
+      "confirmDelete": {
+        "ko": "이 수신 설정을 삭제할까요?",
+        "en": "Delete this setting?",
+        "ja": "この設定を削除しますか？"
+      },
+      "smtp": {
+        "ko": "SMTP 발신 서버",
+        "en": "SMTP Outgoing Server",
+        "ja": "SMTP送信サーバー"
+      },
+      "smtpDesc": {
+        "ko": "답장 발송에 사용합니다. 설정이 있으면 SES 대신 이 서버로 보냅니다.",
+        "en": "Used to send replies. When set, replies go through this server instead of SES.",
+        "ja": "返信の送信に使用します。設定があるとSESの代わりにこのサーバーで送信します。"
+      },
+      "starttls": {
+        "ko": "STARTTLS 사용(587)",
+        "en": "Use STARTTLS (587)",
+        "ja": "STARTTLS使用(587)"
+      },
+      "implicitSsl": {
+        "ko": "SSL 직접 연결(465)",
+        "en": "Implicit SSL (465)",
+        "ja": "SSL直接接続(465)"
+      },
+      "fromAddress": {
+        "ko": "발신 주소",
+        "en": "From address",
+        "ja": "送信元アドレス"
+      },
+      "fromName": {
+        "ko": "발신자 이름",
+        "en": "From name",
+        "ja": "送信者名"
+      },
+      "lastTest": {
+        "ko": "마지막 테스트",
+        "en": "Last test",
+        "ja": "最終テスト"
+      }
+    }
+  }
+}

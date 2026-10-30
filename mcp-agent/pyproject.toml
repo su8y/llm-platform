@@ -1,0 +1,18 @@
+[project]
+requires-python = ">=3.14,<3.15"
+name = "mcp-agent-server"  # project 이름
+version = "0.1.0"
+dynamic = ["dependencies"]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["server"]
+
+[project.scripts]
+rag-server = "server:main"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}

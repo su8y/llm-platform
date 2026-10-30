@@ -1,0 +1,26 @@
+# MCP and Core Dependencies
+mcp>=1.0.0
+fastmcp>=2.13,<3  # 3.x부터 FastMCP(stateless_http=) 등 생성자 인자가 제거돼 server.py와 호환되지 않음
+
+# AI APIs
+openai>=1.0.0
+anthropic>=0.60.0
+pinecone[grpc]>=5.0.0
+
+# Web Framework (for LLM Proxy Server)
+fastapi>=0.119,<1
+uvicorn>=0.38,<1
+pydantic>=2.12,<3
+
+# Database
+PyMySQL>=1.1.0
+clickhouse-driver>=0.2.6
+
+# Utilities
+python-dotenv>=1.0.0
+requests>=2.31.0
+pytz>=2023.3
+numpy>=2.3.3,<3
+
+playwright>=1.40.0
+

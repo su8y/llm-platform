@@ -1,0 +1,248 @@
+@import '../base/variables';
+
+$checkbox: url('../assets/img/icon-checkbox.svg') no-repeat center center;
+$checkboxSelected: url('../assets/img/icon-checkbox-selected.svg') no-repeat center center;
+
+.be-table {
+  border: none;
+  table-layout: fixed;
+
+  .thead-row {
+    border: none;
+    th {
+      background-color: $grey-700;
+      border: none;
+      white-space: nowrap;
+      z-index: 9999999;
+      padding: 12px 0;
+      color: $whiteColor;
+      font-size: $font-13;
+      font-weight: $bold;
+
+      &:first-child {
+        border-radius: 8px 0 0 8px;
+      }
+
+      &:last-child {
+        border-radius: 0 8px 8px 0;
+      }
+    }
+  }
+
+  thead {
+    text-align: left;
+
+    .title-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+
+      .icon.icon--info {
+        cursor: pointer;
+      }
+    }
+
+    .reference-checkbox {
+      width: 100%;
+      cursor: pointer;
+
+      .post-checkbox {
+        display: none;
+
+        + label {
+          position: relative;
+          padding-left: 18px; /* 체크박스 공간 확보 */
+          cursor: pointer;
+
+          &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 18px;
+            height: 18px;
+            background: $checkbox;
+            box-sizing: border-box;
+          }
+        }
+
+        &:checked + label:before {
+          background: $checkboxSelected
+        }
+      }
+    }
+  }
+
+
+  tbody {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: none;
+
+    tr {
+      border: none;
+      background-color: $whiteColor;
+      transition: background-color .3s;
+
+      &:hover:not(&.members-table) {
+        background-color: rgba(0, 0, 0, .05);
+      }
+
+      td {
+        border: 0;
+        color: $grey-600;
+        text-align: center;
+        font-size: $font-14;
+        font-weight: $regular;
+        box-sizing: border-box;
+        border-bottom: 1px solid $line-sm;
+        height: 52px;
+        padding: 0 12px;
+
+
+        &.monitoring-list {
+          cursor: pointer;
+        }
+
+        &.subject {
+          max-width: 250px;
+        }
+
+        &.receivedAt {
+          min-width: 172px;
+          max-width: 172px;
+
+          span {
+            min-width: 172px;
+            max-width: 172px;
+          }
+        }
+
+        &.fromMail, &.toMail {
+          span {
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 200px;
+            margin: 0 auto;
+            min-width: 200px;
+          }
+        }
+
+        &.category, &.subject, &.fromMail {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        &.disabled {
+          height: 48px;
+          pointer-events: none;
+        }
+
+        span {
+          &.disabled {
+            opacity: 0.3;
+          }
+          &.title {
+            cursor: pointer;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        .checkbox-container {
+          .post-checkbox {
+            display: none;
+
+            + label {
+              position: relative;
+              padding-left: 18px; /* 체크박스 공간 확보 */
+              cursor: pointer;
+
+              &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 18px;
+                height: 18px;
+                background: $checkbox;
+                box-sizing: border-box;
+              }
+            }
+
+            &:checked + label:before {
+              background: $checkboxSelected;
+            }
+          }
+        }
+      }
+      &:last-child {
+        td {
+          border-bottom: none;
+        }
+      }
+
+      &.inbox-list {
+        cursor: pointer;
+
+        td {
+          &.time {
+            .sent-at {
+              display: inline-block;
+              width: 156px;
+
+            }
+            .hour {
+              display: inline-block;
+              width: 136px;
+              text-align: left;
+            }
+          }
+          &.subject {
+            text-align: left;
+            span {
+              display: -webkit-box;
+              white-space: wrap;
+              overflow: hidden;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+              text-overflow: ellipsis;
+              line-height: 1.5;
+              max-height: 52px;
+            }
+          }
+        }
+      }
+
+    }
+
+    &.noData {
+      height: 100px;
+      .none-data {
+        color: $searchTitleColor;
+        font-size: 18px;
+        font-weight: $bold;
+      }
+    }
+  }
+}
+
+
+@media all and (max-width: 1280px) {
+  .be-table {
+    tbody {
+      tr {
+        td {
+          &.receivedAt {
+            padding: 0 6px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,172 @@
+@import 'variables';
+
+@font-face {
+  font-family: 'NewRubrik';
+  src: url('https://use.typekit.net/af/de1256/00000000000000003b9af09c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+  format('woff2');
+  font-display: swap;
+  font-style: normal;
+}
+
+
+// color
+$text-blue-lg: $deepblue-700;
+$text-blue-md: $deepblue-500;
+$text-red: $common-red;
+$text-white: $whiteColor;
+$text-grey-xs: $grey-200;
+$text-grey-sm: $grey-300;
+$text-grey-md: $grey-500;
+$text-grey-lg: $grey-600;
+
+// line height
+$line-height-150: 150%;
+$line-height-120: 120%;
+
+// font size
+$font-80: 80px;
+$font-60: 60px;
+$font-50: 50px;
+$font-40: 40px;
+$font-32: 32px;
+$font-28: 28px;
+$font-24: 24px;
+$font-22: 22px;
+$font-20: 20px;
+$font-18: 18px;
+$font-16: 16px;
+$font-15: 15px;
+$font-14: 14px;
+$font-13: 13px;
+
+// font weight
+$regular: 400;
+$semiBold: 600;
+$bold: 700;
+
+.be-font {
+  color: $text-grey-lg;
+  font-weight: $regular;
+
+  // weight
+  &.semi-bold {
+    font-weight: $semiBold;
+  }
+
+  &.bold {
+    font-weight: $bold;
+  }
+
+  // size
+  &.size {
+    &-13 {
+    font-size: $font-13;
+    }
+    &-14 {
+    font-size: $font-14;
+    }
+    &-15 {
+      font-size: $font-15;
+    }
+    &-16 {
+      font-size: $font-16;
+    }
+    &-18 {
+      font-size: $font-18;
+    }
+    &-20 {
+      font-size: $font-20;
+    }
+    &-22 {
+      font-size: $font-22;
+    }
+    &-24 {
+      font-size: $font-24;
+    }
+    &-28 {
+      font-size: $font-28;
+    }
+    &-32 {
+      font-size: $font-32;
+    }
+    &-40 {
+      font-size: $font-40;
+    }
+    &-50 {
+      font-size: $font-50;
+    }
+    &-80 {
+      font-size: $font-80;
+    }
+  }
+
+  // color
+  &.text {
+    &-deepblue {
+      color: $text-blue-lg;
+    }
+    &-blue {
+      color: $text-blue-md;
+    }
+    &-error {
+      color: $text-red;
+    }
+    &-white {
+      color: $text-white;
+    }
+    &-grey-xs {
+      color: $text-grey-xs;
+    }
+    &-grey-sm {
+      color: $text-grey-sm;
+    }
+    &-grey-md {
+      color: $text-grey-md;
+    }
+    &-grey-lg {
+      color: $text-grey-lg;
+    }
+    &-main {
+      color: $mainColor;
+    }
+    &-deep-main {
+      color: #FC004E;
+    }
+    &-yellow {
+      color: #FFBF00;
+    }
+  }
+
+  // line height
+  &.line-height-150 {
+    line-height: $line-height-150;
+  }
+  &.line-height-120 {
+    line-height: $line-height-120;
+  }
+
+  &.disabled {
+    color: $grey-300;
+  }
+
+  &.inherit {
+    font: inherit;
+  }
+}
+
+.text {
+  &-center {
+    text-align: center;
+  }
+  &-left {
+    text-align: left;
+  }
+  &-right {
+    text-align: right;
+  }
+  &-none{
+    text-decoration: none;
+    color:inherit;
+  }
+}
+

@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  config_node:
+    extends:
+      file: secret.yaml
+      service: api
+    environment:
+      - SERVER_STAGE=docker #"production", "staging", "development", "docker"
+      # master 계정 (첫 부팅 시 생성). 설치 후 반드시 비밀번호를 바꿀 것
+      - ADMIN_USER_ID=admin
+      - ADMIN_EMAIL_ADDRESS=admin@admin.com
+      - ADMIN_COMPANY_NAME=admin
+      - ADMIN_EMAIL_AVAILABLE=true   # AI 메일 메뉴 노출. false 면 숨김
+      - MAIL_RECEIVER_ENABLED=true   # IMAP/SES 수신 수집기(백그라운드) 기동 여부
+      - DB_HOST=database
+      - DB_PORT=3306
+      - DB_USERNAME=root
+      - DB_DATABASE=llm_platform
+      - VECTOR_DB_URI=http://vector:19530
+      - VECTOR_DIMENSION=1536
+      - MEMORY_DB_HOST=redis
+      - MEMORY_DB_PORT=6379
+      - MEMORY_DB_NUMBER=2
+      - LLM_PROXY_URL=http://llm-proxy:9999/
+      - MESSAGE_QUEUE_HOST=message-queue
+      - MESSAGE_QUEUE_PORT=5672
+      - MESSAGE_QUEUE_USER=admin
+      - PARSER_RABBITMQ_QUEUE_NAME=llm-platform-file-parser
+      # S3: 로컬 MinIO 컨테이너. 비우면 AWS S3(.env의 AWS_* 자격증명)를 사용
+      - S3_ENDPOINT_URL=http://s3:9000
+      - S3_PUBLIC_ENDPOINT_URL=http://localhost:9010  # 브라우저가 presigned URL로 접근하는 주소

@@ -1,0 +1,334 @@
+version: "3.8"
+
+services:
+  web:
+    build:
+      context: ./web-refac
+      dockerfile: Dockerfile
+    image: llm-platform-web
+    container_name: web-refac
+    depends_on:
+      - api
+    volumes:
+      - ./web-refac/package.json:/app/package.json
+    networks:
+      - ai-network
+
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    image: llm-platform-api
+    container_name: api-refac
+    depends_on:
+      database:
+        condition: service_started
+      vector:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      message-queue:
+        condition: service_healthy
+      s3:
+        condition: service_healthy
+    volumes:
+      - ./api:/home/app
+    extends:
+      file: env/api.yaml
+      service: config_node
+    networks:
+      - ai-network
+
+  database:
+    build:
+      context: ./database
+      dockerfile: Dockerfile
+    image: llm-platform-database
+    container_name: database-refac
+    ports:
+      - "3316:3306"
+    volumes:
+      - ./volumes/database/data:/var/lib/mysql
+      - ./database/my.cnf:/etc/mysql/conf.d/my.cnf
+    extends:
+      file: env/database.yaml
+      service: config_node
+    networks:
+      - ai-network
+
+  redis:
+    build:
+      context: ./redis
+      dockerfile: Dockerfile
+    image: llm-platform-redis
+    container_name: redis-refac
+    networks:
+      - ai-network
+
+  message-queue:
+    build:
+      context: message-queue
+      dockerfile: Dockerfile
+    image: llm-platform-message-queue
+    container_name: message-queue-refac
+    volumes:
+      - ./volumes/rabbitmq:/var/lib/rabbitmq
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "check_port_connectivity"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+      start_period: 60s
+    extends:
+      file: env/message-queue.yaml
+      service: config_node
+    networks:
+      - ai-network
+
+  llm-proxy:
+    build:
+      context: ./llm-proxy
+      dockerfile: Dockerfile
+    image: llm-platform-llm-proxy
+    container_name: llm-proxy-refac
+    ports:
+    - "9989:9999"
+    volumes:
+      - ~/.aws:/root/.aws:ro
+      - ./llm-proxy:/home/app
+    extends:
+      file: env/proxy.yaml
+      service: config_node
+    networks:
+      - ai-network
+
+  mcp:
+    build:
+      context: mcp-agent
+      dockerfile: Dockerfile
+    image: llm-platform-mcp
+    container_name: mcp-refac
+    volumes:
+      - ./mcp-agent:/home/app
+    extends:
+      file: env/mcp.yaml
+      service: config_node
+    networks:
+      - ai-network
+
+  vector:
+    build:
+      context: ./vector
+      dockerfile: Dockerfile-vector
+    image: llm-platform-vector
+    container_name: vector-refac
+    security_opt:
+    - seccomp:unconfined
+    volumes:
+      - ./volumes/vector/data/vector:/var/lib/milvus
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9091/healthz"]
+      interval: 30s
+      start_period: 90s
+      timeout: 20s
+      retries: 3
+    depends_on:
+      s3:
+        condition: service_healthy
+      etcd:
+        condition: service_started
+    extends:
+      file: env/vector.yaml
+      service: config_node
+    networks:
+      - ai-network
+
+  etcd:
+    build:
+      context: ./vector
+      dockerfile: Dockerfile-etcd
+    image: llm-platform-vector-etcd
+    container_name: etcd-refac
+    volumes:
+      - ./volumes/vector/data/etcd:/etcd
+    healthcheck:
+      test: ["CMD", "etcdctl", "endpoint", "health"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+    extends:
+      file: env/vector.yaml
+      service: config_node
+    networks:
+      - ai-network
+
+  attu:
+    build:
+      context: ./vector
+      dockerfile: Dockerfile-attu
+    image: llm-platform-vector-attu
+    container_name: attu-refac
+    depends_on:
+      - vector
+    extends:
+      file: env/vector.yaml
+      service: config_node
+    networks:
+      - ai-network
+
+  s3:
+    build:
+      context: ./s3
+      dockerfile: Dockerfile
+    image: llm-platform-s3
+    container_name: s3-refac
+    # ports:
+    #   - "9000:9000"   # presigned URL 접근용. S3_PUBLIC_ENDPOINT_URL과 맞춘다
+    volumes:
+      - ./volumes/s3:/minio_data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+    extends:
+      file: env/vector.yaml
+      service: config_node
+    networks:
+      - ai-network
+
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    image: llm-platform-nginx
+    container_name: nginx-refac
+    ports:
+      - "4331:4321"
+    volumes:
+      - ./volumes/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+    links:
+      - api
+      - web
+      - vector
+      - attu
+      - message-queue
+      - grafana
+    networks:
+      - ai-network
+
+  logs:
+    build:
+      context: ./logs
+      dockerfile: Dockerfile
+    image: llm-platform-logs
+    container_name: logs-refac
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./logs/collect_logs.sh:/app/collect_logs.sh
+      - ./volumes/logs:/logs
+    extends:
+      file: env/logs.yaml
+      service: config_node
+    depends_on:
+      - nginx
+    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    networks:
+      - ai-network
+
+  cadvisor:
+    build:
+      context: ./monitoring
+      dockerfile: Dockerfile-cadvisor
+    image: llm-platform-cadvisor
+    container_name: cadvisor-refac
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+      - /dev/disk/:/dev/disk:ro
+    privileged: true
+    restart: unless-stopped
+    networks:
+      - ai-network
+
+  container-name-exporter:
+    build:
+      context: ./monitoring
+      dockerfile: Dockerfile-name-exporter
+    image: llm-platform-container-name-exporter
+    container_name: container-name-exporter-refac
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    restart: unless-stopped
+    networks:
+      - ai-network
+
+  prometheus:
+    build:
+      context: ./monitoring
+      dockerfile: Dockerfile-prometheus
+    image: llm-platform-prometheus
+    container_name: prometheus-refac
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./volumes/monitoring/prometheus:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+    restart: unless-stopped
+    networks:
+      - ai-network
+
+  # 시각화
+  grafana:
+    build:
+      context: ./monitoring
+      dockerfile: Dockerfile-grafana
+    image: llm-platform-grafana
+    container_name: grafana-refac
+    extends:
+      file: env/monitoring.yaml
+      service: config_node
+    volumes:
+      - ./volumes/monitoring/grafana:/var/lib/grafana
+    restart: unless-stopped
+    depends_on:
+      - prometheus
+    networks:
+      - ai-network
+
+  clickhouse:
+    build:
+      context: ./clickhouse
+      dockerfile: Dockerfile
+    image: llm-platform-clickhouse
+    container_name: clickhouse-refac
+    ports:
+      - "8133:8123"
+    volumes:
+      - ./volumes/clickhouse:/var/lib/clickhouse
+    extends:
+      file: env/clickhouse.yaml
+      service: config_node
+    networks:
+      - ai-network
+
+#  clickhouse_mcp:
+#    image: mcp/clickhouse:latest
+#    container_name: clickhouse-refac_mcp
+#    depends_on:
+#      - clickhouse
+#    networks:
+#      - ai-network
+
+networks:
+  ai-network:
+    external: true
+    name: ai-network-refac
